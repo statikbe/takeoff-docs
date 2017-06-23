@@ -1,0 +1,1480 @@
+<!doctype html>
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie10" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9 lt-ie10" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Takeoff - A great framework - Components</title>
+
+    <link href='//fonts.googleapis.com/css?family=Material+Icons|Open+Sans:400italic,600italic,700italic,400,700,600|Merriweather:400italic,400,700' rel='stylesheet' type='text/css'>
+    <!--[if gt IE 8]><!--><link rel="stylesheet" href="/css/main.min.css"><!--<![endif]-->
+    <!--[if lt IE 9]><link rel="stylesheet" href="/css/main-legacy.min.css"><![endif]-->
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.9.1/styles/github-gist.min.css">
+
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <script type="text/javascript" src="/2016tmp/js/modernizr.min.js"></script>
+    <!--[if lt IE 9]><script type="text/javascript" src="/js/polyfill.min.js"></script><![endif]-->
+</head>
+
+
+<body>
+
+    <header class="page-header">
+    <div class="container">
+        <nav class="nav nav--main">
+            <ul>
+                
+                    
+                        <!--<li><a class="page-link" href="/">Home</a></li>-->
+                        <li><a  href="/">Home</a></li>
+                    
+                
+                    
+                        <!--<li><a class="page-link" href="/grid/">Grid</a></li>-->
+                        <li><a  href="/grid/">Grid</a></li>
+                    
+                
+                    
+                        <!--<li><a class="page-link" href="/core/">Core</a></li>-->
+                        <li><a  href="/core/">Core</a></li>
+                    
+                
+                    
+                        <!--<li><a class="page-link" href="/components/">Components</a></li>-->
+                        <li><a class="active" href="/components/">Components</a></li>
+                    
+                
+                <li><a href="/docs">Docs</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <div class="page-main" role="main">
+        <div class="section section--default">
+    <div class="container">
+        <div class="grid">
+            <div class="grid__12 grid--bp-med__2">
+                <nav class="nav nav--list">
+                    <ul>
+                        <li><a href="#banner">Banner</a></li>
+                        <li><a href="#blocks">Blokken</a></li>
+                        <li><a href="#breadcrumbs">Broodkruimel</a></li>
+                        <li><a href="#btn-group">Knoppen groeperen</a></li>
+                        <li><a href="#collapse">Collapse</a></li>
+                        <!--<li><a href="#date">Date</a></li>-->
+                        <!--<li><a href="#download">Download</a></li>-->
+                        <li><a href="#dropdown">Dropdown</a></li>
+                        <li><a href="#embed">Responsive Embed</a></li>
+                        <li><a href="#excerpt">Excerpt</a></li>
+                        <li><a href="#gallery">Colorbox</a></li>
+                        <li><a href="#inline">Inline</a></li>
+                        <li><a href="#label">Label</a></li>
+                        <!--<li><a href="#legend">Legend</a></li>-->
+                        <!--<li><a href="#logo">Logo</a></li>-->
+                        <!--<li><a href="#map">Map</a></li>-->
+                        <!--<li><a href="#media">Media</a></li>-->
+                        <li><a href="#meta">Meta</a></li>
+                        <li><a href="#notice">Notice</a></li>
+                        <li><a href="#pagination">Paginatie</a></li>
+                        <li><a href="#panel">Panel</a></li>
+                        <li><a href="#progress">Progress</a></li>
+                        <li><a href="#scrolltop">Scroll to top</a></li>
+                        <li><a href="#share">Share</a></li>
+                        <li><a href="#spacer">Spacer</a></li>
+                        <li><a href="#tabs">Tabs</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="grid__12 grid--bp-med__10">
+                <div id="banner" class="spacer--lrg">
+                    <h2>Banner</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <div style="background-image: url(http://lorempixel.com/800/400/);" class="banner banner--image spacer">
+                                <div class="container">
+                                    <div class="grid">
+                                        <div class="grid--bp-med__6">
+                                            <div class="block block--banner">
+                                                <h1 class="heading--colored"><div>Lorem Ipsum</div>Dolor</h1>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facere accusamus, earum minima neque dolorem quod facilis veniam ex labore est dolore nihil vero quisquam et, id eius rerum fugiat.</p>
+                                                <p class="spacer">Lorem ipsul dolor...</p>
+                                                <a class="btn btn--ext spacer" href="#">Call to action</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="banner--info">
+                                    <i class="material-icons">info_outline</i> <a href="#">Microscopical view of a thing <i class="material-icons">arrow_forward</i></a>
+                                </div>
+                            </div>
+                            <div class="notice notice--info spacer">De banner neemt de volledige breedte van het scherm aan.</div>
+                            <div class="notice notice--danger"><strong>Opgelet!</strong> Bekijk eerst het <a href="../grid/">grid</a> voor je de banner gebruikt.</div>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-1" class="html">&#x3C;div style=&#x22;background-image: url(...);&#x22; class=&#x22;banner banner--image spacer&#x22;&#x3E;
+    &#x3C;div class=&#x22;container&#x22;&#x3E;
+        &#x3C;div class=&#x22;grid&#x22;&#x3E;
+            &#x3C;div class=&#x22;grid--bp-med__6&#x22;&#x3E;
+                &#x3C;div class=&#x22;block block--banner&#x22;&#x3E;
+                    &#x3C;h1 class=&#x22;heading--colored&#x22;&#x3E;&#x3C;div&#x3E;Lorem Ipsum&#x3C;/div&#x3E;Dolor&#x3C;/h1&#x3E;
+                    &#x3C;p&#x3E;Lorem ipsum dolor...&#x3C;/p&#x3E;
+                    &#x3C;p class=&#x22;spacer&#x22;&#x3E;Lorem ipsul dolor...&#x3C;/p&#x3E;
+                    &#x3C;a class=&#x22;btn btn--ext spacer&#x22; href=&#x22;#&#x22;&#x3E;Call to action&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;banner--info&#x22;&#x3E;
+        &#x3C;i class=&#x22;material-icons&#x22;&#x3E;info_outline&#x3C;/i&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Microscopical view of a thing &#x3C;i class=&#x22;material-icons&#x22;&#x3E;arrow_forward&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-1">copy</button>
+                </div>
+
+                <div id="blocks" class="spacer--lrg">
+                    <h2>Blokken</h2>
+                    <div class="notice notice--info">Als de class .block meteen achter elkaar herhaald wordt, krijgt de tweede block automatisch een margin-top van 20px.</div>
+                    <div class="panel spacer--lrg">
+                    <div class="panel__body">
+                        <p class="text--label">Standaard tekstblok</p>
+                        <div class="block block--bg">
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                            <a href="#" class="link--ext">Parturient Pellentesque Sem</a>
+                        </div>
+                    </div>
+                    <div class="panel__code">
+                        <pre><code id="copy-2" class="html">&#x3C;div class=&#x22;block block--bg&#x22;&#x3E;
+    &#x3C;p&#x3E;Fusce dapibus, tellus ac cursus commodo...&#x3C;/p&#x3E;
+    &#x3C;a href=&#x22;#&#x22; class=&#x22;link--ext&#x22;&#x3E;Parturient Pellentesque Sem&#x3C;/a&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                    </div>
+                </div>
+                <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-2">copy</button>
+
+                <div class="panel spacer--lrg">
+                    <div class="panel__body">
+                        <p class="text--label">Blok primary</p>
+                        <div class="block block--primary">
+                            <h2 class="block__title">Lorem ipsum consectetur adipiscing elit</h2>
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                        </div>
+                    </div>
+                    <div class="panel__code">
+                        <pre><code id="copy-3" class="html">&#x3C;div class=&#x22;block block--primary&#x22;&#x3E;
+    &#x3C;h2 class=&#x22;block__title&#x22;&#x3E;Lorem ipsum consectetur adipiscing elit&#x3C;/h2&#x3E;
+    &#x3C;p&#x3E;Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                    </div>
+                </div>
+                <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-3">copy</button>
+
+                <div class="panel spacer--lrg">
+                    <div class="panel__body">
+                        <p class="text--label">Blok secondary</p>
+                        <div class="block block--secondary">
+                            <h2 class="block__title">Lorem ipsum consectetur adipiscing elit</h2>
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                            <div class="inline">
+                                <div class="inline__item">
+                                    <a href="#" class="btn btn--secondary">Tortor Pharetra Euismod</a>
+                                </div>
+                                <div class="inline__item">
+                                    <a href="#" class="btn btn--secondary">Tortor Pharetra Euismod</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel__code"><pre><code id="copy-4" class="html">&#x3C;div class=&#x22;block block--secondary&#x22;&#x3E;
+    &#x3C;h2 class=&#x22;block__title&#x22;&#x3E;Lorem ipsum consectetur adipiscing elit&#x3C;/h2&#x3E;
+    &#x3C;p&#x3E;Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.&#x3C;/p&#x3E;
+    &#x3C;div class=&#x22;inline&#x22;&#x3E;
+        &#x3C;div class=&#x22;inline__item&#x22;&#x3E;
+            &#x3C;a href=&#x22;#&#x22; class=&#x22;btn btn--secondary&#x22;&#x3E;Tortor Pharetra Euismod&#x3C;/a&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;inline__item&#x22;&#x3E;
+            &#x3C;a href=&#x22;#&#x22; class=&#x22;btn btn--secondary&#x22;&#x3E;Tortor Pharetra Euismod&#x3C;/a&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                    </div>
+                </div>
+                <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-4">copy</button>
+
+                <div class="panel spacer--lrg">
+                    <div class="panel__body">
+                        <p class="text--label">Contact blok</p>
+                        <div class="block block--contact">
+                            <h2 class="block__title">Contactinfo</h2>
+                            <p>Donec sed odio dui. Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                            <div class="vcard">
+                                <div class="vcard__item">
+                                    <svg class="vcard__icon" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 4C14.2091 4 16 5.79086 16 8C16 10.2091 14.2091 12 12 12C9.79086 12 8 10.2091 8 8C8 5.79086 9.79086 4 12 4ZM12 14C16.4183 14 20 15.7909 20 18L20 20L4 20L4 18C4 15.7909 7.58172 14 12 14Z"></path>
+                                    </svg>
+                                    <div class="fn">Forrest Gump</div>
+                                </div>
+                                <div class="vcard__item">
+                                    <svg class="vcard__icon" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"></path>
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                    </svg>
+                                    <div class="adr">
+                                        <span class="street-address">Tiensestraat 176</span><br>
+                                        <span class="postal-code">3000</span> <span class="locality">Leuven</span>
+                                    </div>
+                                </div>
+                                <div class="vcard__item">
+                                    <svg class="vcard__icon" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14,17H7V15H14M17,13H7V11H17M17,9H7V7H17M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z"></path>
+                                    </svg>
+                                    <div class="email">
+                                        <a class="value" href="mailto:forrestgump@example.com">forrestgump@example.com</a>
+                                    </div>
+                                </div>
+                                <div class="vcard__item">
+                                    <svg class="vcard__icon" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"></path>
+                                    </svg>
+                                    <div class="tel">+1-111-555-1212</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel__code">
+                        <pre><code id="copy-5" class="html">&#x3C;div class=&#x22;block block--contact&#x22;&#x3E;
+    &#x3C;h2 class=&#x22;block__title&#x22;&#x3E;Contactinfo&#x3C;/h2&#x3E;
+    &#x3C;!-- P tag Optioneel --&#x3E;
+    &#x3C;p&#x3E;Donec sed odio dui. Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.&#x3C;/p&#x3E;
+    &#x3C;div class=&#x22;vcard&#x22;&#x3E;
+        &#x3C;div class=&#x22;vcard__item&#x22;&#x3E;
+            &#x3C;svg class=&#x22;vcard__icon&#x22; viewBox=&#x22;0 0 24 24&#x22; width=&#x22;24&#x22; height=&#x22;24&#x22; xmlns=&#x22;http://www.w3.org/2000/svg&#x22;&#x3E;
+                &#x3C;path d=&#x22;M12 4C14.2091 4 16 5.79086 16 8C16 10.2091 14.2091 12 12 12C9.79086 12 8 10.2091 8 8C8 5.79086 9.79086 4 12 4ZM12 14C16.4183 14 20 15.7909 20 18L20 20L4 20L4 18C4 15.7909 7.58172 14 12 14Z&#x22;&#x3E;&#x3C;/path&#x3E;
+            &#x3C;/svg&#x3E;
+            &#x3C;div class=&#x22;fn&#x22;&#x3E;Forrest Gump&#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;vcard__item&#x22;&#x3E;
+            &#x3C;svg class=&#x22;vcard__icon&#x22; viewBox=&#x22;0 0 24 24&#x22; width=&#x22;24&#x22; height=&#x22;24&#x22; xmlns=&#x22;http://www.w3.org/2000/svg&#x22;&#x3E;
+                &#x3C;path d=&#x22;M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z&#x22;&#x3E;&#x3C;/path&#x3E;
+                &#x3C;path d=&#x22;M0 0h24v24H0z&#x22; fill=&#x22;none&#x22;&#x3E;&#x3C;/path&#x3E;
+            &#x3C;/svg&#x3E;
+            &#x3C;div class=&#x22;adr&#x22;&#x3E;
+                &#x3C;span class=&#x22;street-address&#x22;&#x3E;Tiensestraat 176&#x3C;/span&#x3E;&#x3C;br&#x3E;
+                &#x3C;span class=&#x22;postal-code&#x22;&#x3E;3000&#x3C;/span&#x3E; &#x3C;span class=&#x22;locality&#x22;&#x3E;Leuven&#x3C;/span&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;vcard__item&#x22;&#x3E;
+            &#x3C;svg class=&#x22;vcard__icon&#x22; viewBox=&#x22;0 0 24 24&#x22; width=&#x22;24&#x22; height=&#x22;24&#x22; xmlns=&#x22;http://www.w3.org/2000/svg&#x22;&#x3E;
+                &#x3C;path d=&#x22;M14,17H7V15H14M17,13H7V11H17M17,9H7V7H17M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z&#x22;&#x3E;&#x3C;/path&#x3E;
+            &#x3C;/svg&#x3E;
+            &#x3C;div class=&#x22;email&#x22;&#x3E;
+                &#x3C;a class=&#x22;value&#x22; href=&#x22;mailto:forrestgump@example.com&#x22;&#x3E;forrestgump@example.com&#x3C;/a&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;vcard__item&#x22;&#x3E;
+            &#x3C;svg class=&#x22;vcard__icon&#x22; viewBox=&#x22;0 0 24 24&#x22; width=&#x22;24&#x22; height=&#x22;24&#x22; xmlns=&#x22;http://www.w3.org/2000/svg&#x22;&#x3E;
+                &#x3C;path d=&#x22;M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z&#x22;&#x3E;&#x3C;/path&#x3E;
+            &#x3C;/svg&#x3E;
+            &#x3C;div class=&#x22;tel&#x22;&#x3E;+1-111-555-1212&#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                    </div>
+                </div>
+                <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-5">copy</button>
+
+                <div class="panel spacer--lrg">
+                    <div class="panel__body">
+                        <p class="text--label">Blok met afbeelding 100</p>
+                        <div class="media">
+                            <div class="media__figure" style="background-image: url(http://lorempixel.com/400/400/)">
+                                <img src="http://lorempixel.com/400/400/">
+                            </div>
+                            <div class="media__body">
+                                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                                <a class="text__cta cta link--ext" href="https://onderwijsaanbod.kuleuven.be/">Rechtstreeks naar alle opleidingen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel__code">
+                        <pre><code id="copy-6" class="html">&#x3C;div class=&#x22;media&#x22;&#x3E;
+    &#x3C;div class=&#x22;media__figure&#x22; style=&#x22;background-image: url(...)&#x22;&#x3E;
+        &#x3C;img src=&#x22;...&#x22;&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;media__body&#x22;&#x3E;
+        &#x3C;p&#x3E;...&#x3C;/p&#x3E;
+        &#x3C;a class=&#x22;text__cta cta link--ext&#x22; href=&#x22;#&#x22;&#x3E;Rechtstreeks naar alle opleidingen&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                    </div>
+                </div>
+                <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-6">copy</button>
+
+                <div class="panel spacer--lrg">
+                    <div class="panel__body">
+                        <p class="text--label">Blok met afbeelding 50 - 50</p>
+                        <div class="media media--50-50">
+                            <div class="media__figure" style="background-image: url(http://lorempixel.com/400/400/)">
+                                <img src="http://lorempixel.com/400/400/">
+                            </div>
+                            <div class="media__body">
+                                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel__code">
+                        <pre><code id="copy-7" class="html">&#x3C;div class=&#x22;media media--50-50&#x22;&#x3E;
+    &#x3C;div class=&#x22;media__figure&#x22; style=&#x22;background-image: url(...)&#x22;&#x3E;
+        &#x3C;img src=&#x22;...&#x22;&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;media__body&#x22;&#x3E;
+        &#x3C;p&#x3E;Fusce dapibus, tellus ac cursus commodo...&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                    </div>
+                </div>
+                <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-7">copy</button>
+
+                <div class="panel spacer--lrg">
+                    <div class="panel__body">
+                        <p class="text--label">Blok met afbeelding 25 - 75</p>
+                        <div class="media media--25-75">
+                            <div class="media__figure" style="background-image: url(http://lorempixel.com/400/400/)">
+                                <img src="http://lorempixel.com/400/400/">
+                            </div>
+                            <div class="media__body">
+                                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                                <a href="#" class="btn btn--ext">Tortor Pharetra Euismod</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel__code">
+                        <pre><code id="copy-8" class="html">&#x3C;div class=&#x22;media media--25-75&#x22;&#x3E;
+    &#x3C;div class=&#x22;media__figure&#x22; style=&#x22;background-image: url(...)&#x22;&#x3E;
+        &#x3C;img src=&#x22;...&#x22;&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;media__body&#x22;&#x3E;
+        &#x3C;p&#x3E;Fusce dapibus, tellus ac cursus commodo...&#x3C;/p&#x3E;
+        &#x3C;a href=&#x22;#&#x22; class=&#x22;btn btn--ext&#x22;&#x3E;Tortor Pharetra Euismod&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                    </div>
+                </div>
+                <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-8">copy</button>
+
+                <div class="panel spacer--lrg">
+                    <div class="panel__body">
+                        <p class="text--label">Blok met cover afbeelding</p>
+                        <div class="grid grid--flex spacer">
+                            <div class="grid__12 grid--bp-med__9">
+                                <div class="media media--cover">
+                                    <div class="media__figure" style="background-image: url(http://lorempixel.com/400/400/)">
+                                        <img src="http://lorempixel.com/400/400/">
+                                    </div>
+                                    <div class="media__body">
+                                        <p>Fusce dapibus, tellus ac cursus commodo...</p>
+                                        <a href="#" class="btn btn--ext btn--ghost">Nullam Aenean</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__12 grid--bp-med__3">
+                                <div class="media">
+                                    <div class="media__body">
+                                        <p>Dit is een voorbeeld blok om de media--cover te kunnen laten werken.</p>
+                                        <p>De cover neemt de hoogte aan van het blok dat ernaast staat. (Dit blok)</p>
+                                        <p>Zonder dit blok is dit niet mogelijk.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notice notice--danger spacer"><strong>Opgelet!</strong> media--cover werkt alleen met het grid--flex (.grid .grid--flex). <a href="/grid/#gridflex" class="link link--ext">Bekijk het grid flex</a></div>
+                    </div>
+                    <div class="panel__code">
+                        <pre><code id="copy-9" class="html">&#x3C;div class=&#x22;media media--cover&#x22;&#x3E;
+    &#x3C;div class=&#x22;media__figure&#x22; style=&#x22;background-image: url(...)&#x22;&#x3E;
+        &#x3C;img src=&#x22;...&#x22;&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;media__body&#x22;&#x3E;
+        &#x3C;p&#x3E;Fusce dapibus, tellus ac cursus commodo...&#x3C;/p&#x3E;
+        &#x3C;a href=&#x22;#&#x22; class=&#x22;btn btn--ext btn--ghost&#x22;&#x3E;Nullam Aenean&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                    </div>
+                </div>
+                <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-9">copy</button>
+
+                <div class="panel spacer--lrg">
+                    <div class="panel__body">
+                        <p class="text--label">Blokken met een notice class</p>
+                        <div class="block block--panel notice--success">
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                        </div>
+                        <div class="block block--panel notice--info">
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                        </div>
+                        <div class="block block--panel notice--warning">
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                        </div>
+                        <div class="block block--panel notice--danger spacer">
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                        </div>
+                        <p class="text--label spacer">Blok met een notice class die je kan sluiten</p>
+                        <div class="block block--panel notice--info alert">
+                            <button type="button" class="btn--close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum iste, consequuntur consectetur ipsam asperiores pariatur, delectus ex nobis praesentium. Tenetur, veritatis, doloremque quisquam labore unde nemo dolorum sequi recusandae rem.</p>
+                        </div>
+                    </div>
+                    <div class="panel__code">
+                        <pre><code id="copy-block-notice" class="html">&#x3C;div class=&#x22;block block--panel notice--success&#x22;&#x3E;
+    &#x3C;p&#x3E;Fusce dapibus, tellus ac cursus commodo...&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;block block--panel notice--info&#x22;&#x3E;
+    &#x3C;p&#x3E;Fusce dapibus, tellus ac cursus commodo...&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;block block--panel notice--warning&#x22;&#x3E;
+    &#x3C;p&#x3E;Fusce dapibus, tellus ac cursus commodo...&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;block block--panel notice--danger&#x22;&#x3E;
+    &#x3C;p&#x3E;Fusce dapibus, tellus ac cursus commodo...&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;block block--panel notice--info alert&#x22;&#x3E;
+    &#x3C;button type=&#x22;button&#x22; class=&#x22;btn--close&#x22; data-dismiss=&#x22;alert&#x22; aria-label=&#x22;Close&#x22;&#x3E;
+        &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;&#x26;times;&#x3C;/span&#x3E;
+    &#x3C;/button&#x3E;
+    &#x3C;p&#x3E;Fusce dapibus, tellus ac cursus commodo...&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                    </div>
+                </div>
+                <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-block-notice">copy</button>
+
+                </div>
+
+                <div id="breadcrumbs" class="spacer--lrg">
+                    <h2>Broodkruimels</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <p class="text--label">Standaard breadcrumbs</p>
+                            <div class="breadcrumb">
+                                <span itemscope class="breadcrumb__scope" itemtype="http://data-vocabulary.org/Breadcrumb">
+                                    <a href="..." itemprop="url" class="breadcrumb__item">
+                                        <span itemprop="title">Home</span>
+                                    </a>
+                                </span>
+                                <span itemscope class="breadcrumb__scope" itemtype="http://data-vocabulary.org/Breadcrumb">
+                                    <a href="..." itemprop="url" class="breadcrumb__item">
+                                        <span itemprop="title">Toekomstige studenten</span>
+                                    </a>
+                                </span>
+                                <span itemscope class="breadcrumb__scope" itemtype="http://data-vocabulary.org/Breadcrumb">
+                                    <a href="..." itemprop="url" class="breadcrumb__item breadcrumb__item--active">
+                                        <span itemprop="title">Openlesdagen</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-10" class="html">&#x3C;div class=&#x22;breadcrumb&#x22;&#x3E;
+    &#x3C;span itemscope class=&#x22;breadcrumb__scope&#x22; itemtype=&#x22;http://data-vocabulary.org/Breadcrumb&#x22;&#x3E;
+        &#x3C;a href=&#x22;...&#x22; itemprop=&#x22;url&#x22; class=&#x22;breadcrumb__item&#x22;&#x3E;
+            &#x3C;span itemprop=&#x22;title&#x22;&#x3E;Home&#x3C;/span&#x3E;
+        &#x3C;/a&#x3E;
+    &#x3C;/span&#x3E;
+    &#x3C;span itemscope class=&#x22;breadcrumb__scope&#x22; itemtype=&#x22;http://data-vocabulary.org/Breadcrumb&#x22;&#x3E;
+        &#x3C;a href=&#x22;.../...&#x22; itemprop=&#x22;url&#x22; class=&#x22;breadcrumb__item&#x22;&#x3E;
+            &#x3C;span itemprop=&#x22;title&#x22;&#x3E;Toekomstige studenten&#x3C;/span&#x3E;
+        &#x3C;/a&#x3E;
+    &#x3C;/span&#x3E;
+    &#x3C;span itemscope class=&#x22;breadcrumb__scope&#x22; itemtype=&#x22;http://data-vocabulary.org/Breadcrumb&#x22;&#x3E;
+        &#x3C;a href=&#x22;.../.../...&#x22; itemprop=&#x22;url&#x22; class=&#x22;breadcrumb__item breadcrumb__item--active&#x22;&#x3E;
+            &#x3C;span itemprop=&#x22;title&#x22;&#x3E;Openlesdagen&#x3C;/span&#x3E;
+        &#x3C;/a&#x3E;
+   &#x3C;/span&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-10">copy</button>
+                </div>
+
+                <div id="btn-group" class="spacer--lrg">
+                    <h2>Knoppen groeperen</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <p class="text--label">Knoppen groeperen</p>
+                            <div class="btn-group spacer">
+                                <div class="btn">Knop 1</div>
+                                <div class="btn">Knop 2</div>
+                                <div class="btn">Knop 3</div>
+                            </div>
+                            <p class="text--label spacer--lrg">Volledige breedte</p>
+                            <div class="btn-group btn-group--justified spacer">
+                                <div class="btn">Knop 1</div>
+                                <div class="btn">Knop 2</div>
+                                <div class="btn">Knop 3</div>
+                            </div>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-btn-group" class="html">&#x3C;div class=&#x22;btn-group&#x22;&#x3E;
+    &#x3C;div class=&#x22;btn&#x22;&#x3E;Knop 1&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;btn&#x22;&#x3E;Knop 2&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;btn&#x22;&#x3E;Knop 3&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- Volledige Breedte --&#x3E;
+&#x3C;div class=&#x22;btn-group btn-group--justified&#x22;&#x3E;
+    &#x3C;div class=&#x22;btn&#x22;&#x3E;Knop 1&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;btn&#x22;&#x3E;Knop 2&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;btn&#x22;&#x3E;Knop 3&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-btn-group">copy</button>
+                </div>
+
+                <div id="collapse" class="spacer--lrg">
+                    <h2>Collapse</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <p class="text--label">Collapse</p>
+                            <a class="btn spacer" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                Link met href
+                            </a>
+                            <button class="btn spacer" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                Knop met data-target
+                            </button>
+                            <div class="collapse spacer" id="collapseExample">
+                                <div class="block block--bg">
+                                    Collapse voorbeeld
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- Accordion -->
+                            <p class="text--label">Accordion</p>
+                            <div class="panel--group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel--glue">
+                                    <div class="panel__header" role="tab" id="heading1">
+                                        <h5>
+                                            <a class="accordion--title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                                Accordion 1
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse1" class="panel-collapse collapse in panel__body" role="tabpanel" aria-labelledby="heading1">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                                <div class="panel panel--glue">
+                                    <div class="panel__header" role="tab" id="heading2">
+                                        <h5>
+                                            <a class="collapsed accordion--title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                              Accordion 2
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse2" class="panel-collapse collapse panel__body" role="tabpanel" aria-labelledby="heading2">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                                <div class="panel panel--glue">
+                                    <div class="panel__header" role="tab" id="heading3">
+                                        <h5>
+                                            <a class="collapsed accordion--title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                              Accordion 3
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse3" class="panel-collapse collapse panel__body" role="tabpanel" aria-labelledby="heading3">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-collapse" class="html">&#x3C;a class=&#x22;btn&#x22; role=&#x22;button&#x22; data-toggle=&#x22;collapse&#x22; href=&#x22;#collapseExample&#x22; aria-expanded=&#x22;false&#x22; aria-controls=&#x22;collapseExample&#x22;&#x3E;
+    Link met href
+&#x3C;/a&#x3E;
+&#x3C;button class=&#x22;btn&#x22; type=&#x22;button&#x22; data-toggle=&#x22;collapse&#x22; data-target=&#x22;#collapseExample&#x22; aria-expanded=&#x22;false&#x22; aria-controls=&#x22;collapseExample&#x22;&#x3E;
+    Knop met data-target
+&#x3C;/button&#x3E;
+&#x3C;div class=&#x22;collapse&#x22; id=&#x22;collapseExample&#x22;&#x3E;
+    &#x3C;div class=&#x22;block block--bg&#x22;&#x3E;
+        Collapse voorbeeld
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;!-- Accordion --&#x3E;
+
+&#x3C;div class=&#x22;panel--group&#x22; id=&#x22;accordion&#x22; role=&#x22;tablist&#x22; aria-multiselectable=&#x22;true&#x22;&#x3E;
+    &#x3C;div class=&#x22;panel panel--glue&#x22;&#x3E;
+        &#x3C;div class=&#x22;panel__header&#x22; role=&#x22;tab&#x22; id=&#x22;heading1&#x22;&#x3E;
+            &#x3C;h5&#x3E;
+                &#x3C;a class=&#x22;accordion--title&#x22; role=&#x22;button&#x22; data-toggle=&#x22;collapse&#x22; data-parent=&#x22;#accordion&#x22; href=&#x22;#collapse1&#x22; aria-expanded=&#x22;true&#x22; aria-controls=&#x22;collapse1&#x22;&#x3E;
+                    Accordion 1
+                &#x3C;/a&#x3E;
+            &#x3C;/h5&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div id=&#x22;collapse1&#x22; class=&#x22;panel-collapse collapse in panel__body&#x22; role=&#x22;tabpanel&#x22; aria-labelledby=&#x22;heading1&#x22;&#x3E;
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#x27;t heard of them accusamus labore sustainable VHS.
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;panel panel--glue&#x22;&#x3E;
+        &#x3C;div class=&#x22;panel__header&#x22; role=&#x22;tab&#x22; id=&#x22;heading2&#x22;&#x3E;
+            &#x3C;h5&#x3E;
+                &#x3C;a class=&#x22;collapsed accordion--title&#x22; role=&#x22;button&#x22; data-toggle=&#x22;collapse&#x22; data-parent=&#x22;#accordion&#x22; href=&#x22;#collapse2&#x22; aria-expanded=&#x22;false&#x22; aria-controls=&#x22;collapse2&#x22;&#x3E;
+                  Accordion 2
+                &#x3C;/a&#x3E;
+            &#x3C;/h5&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div id=&#x22;collapse2&#x22; class=&#x22;panel-collapse collapse panel__body&#x22; role=&#x22;tabpanel&#x22; aria-labelledby=&#x22;heading2&#x22;&#x3E;
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#x27;t heard of them accusamus labore sustainable VHS.
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;panel panel--glue&#x22;&#x3E;
+        &#x3C;div class=&#x22;panel__header&#x22; role=&#x22;tab&#x22; id=&#x22;heading3&#x22;&#x3E;
+            &#x3C;h5&#x3E;
+                &#x3C;a class=&#x22;collapsed accordion--title&#x22; role=&#x22;button&#x22; data-toggle=&#x22;collapse&#x22; data-parent=&#x22;#accordion&#x22; href=&#x22;#collapse3&#x22; aria-expanded=&#x22;false&#x22; aria-controls=&#x22;collapse3&#x22;&#x3E;
+                  Accordion 3
+                &#x3C;/a&#x3E;
+            &#x3C;/h5&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div id=&#x22;collapse3&#x22; class=&#x22;panel-collapse collapse panel__body&#x22; role=&#x22;tabpanel&#x22; aria-labelledby=&#x22;heading3&#x22;&#x3E;
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#x27;t heard of them accusamus labore sustainable VHS.
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-collapse">copy</button>
+                </div>
+
+                <!--<div id="download" class="spacer--lrg">
+                    <h2>Download</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <div class="download">
+                                Download 1
+                                <div class="download__meta">yes?</div>
+                            </div>
+                            <div class="download">
+                                Download 2
+                                <div class="download__meta">yes?</div>
+                            </div>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-download" class="html"></code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-download">copy</button>
+                </div>-->
+
+                <div id="dropdown" class="spacer--lrg">
+                    <h2>Dropdown</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <div class="dropdown spacer">
+                                <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown knop
+                                    <i class="material-icons">keyboard_arrow_down</i>
+                                </button>
+                                <ul class="dropdown__menu" aria-labelledby="dLabel">
+                                    <li><a href="#">Item 1</a></li>
+                                    <li><a href="#">Item 2</a></li>
+                                    <li><a href="#">Item 3</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown spacer--med">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown link
+                                    <i class="material-icons">keyboard_arrow_down</i>
+                                </a>
+                                <ul class="dropdown__menu">
+                                    <li><a href="#">Item 1</a></li>
+                                    <li><a href="#">Item 2</a></li>
+                                    <li><a href="#">Item 3</a></li>
+                                    <li role="separator" class="dropdown__divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li role="separator" class="dropdown__divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-dropdown" class="html">&#x3C;!-- Knop --&#x3E;
+&#x3C;div class=&#x22;dropdown&#x22;&#x3E;
+    &#x3C;button id=&#x22;dLabel&#x22; type=&#x22;button&#x22; data-toggle=&#x22;dropdown&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;false&#x22;&#x3E;
+        Dropdown knop
+        &#x3C;i class=&#x22;material-icons&#x22;&#x3E;keyboard_arrow_down&#x3C;/i&#x3E;
+    &#x3C;/button&#x3E;
+    &#x3C;ul class=&#x22;dropdown__menu&#x22; aria-labelledby=&#x22;dLabel&#x22;&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Item 1&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Item 2&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Item 3&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- Link --&#x3E;
+&#x3C;div class=&#x22;dropdown&#x22;&#x3E;
+    &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-toggle&#x22; data-toggle=&#x22;dropdown&#x22; role=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22; aria-expanded=&#x22;false&#x22;&#x3E;
+        Dropdown link
+        &#x3C;i class=&#x22;material-icons&#x22;&#x3E;keyboard_arrow_down&#x3C;/i&#x3E;
+    &#x3C;/a&#x3E;
+    &#x3C;ul class=&#x22;dropdown__menu&#x22;&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Item 1&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Item 2&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Item 3&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li role=&#x22;separator&#x22; class=&#x22;dropdown__divider&#x22;&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Separated link&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li role=&#x22;separator&#x22; class=&#x22;dropdown__divider&#x22;&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;One more separated link&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-dropdown">copy</button>
+                </div>
+
+                <div id="embed" class="spacer--lrg">
+                    <h2>Responsive Embed</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <div class="embed-container">
+                                <iframe src="https://www.youtube.com/embed/JExfqOWeQa8?rel=0" allowfullscreen="" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-11" class="html">&#x3C;div class=&#x22;embed-container&#x22;&#x3E;
+    &#x3C;iframe src=&#x22;...&#x22;&#x3E;&#x3C;/iframe&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-11">copy</button>
+                </div>
+
+                <div id="excerpt" class="spacer--lrg">
+                    <h2>Excerpt</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <p class="text--label">Large</p>
+                            <div class="excerpt excerpt--activity excerpt--hz-large">
+                                <div class="excerpt__aside">
+                                    <div class="excerpt__img">
+                                        <a href="#">
+                                            <img src="http://lorempixel.com/400/400/" class="image image--full-width">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="excerpt__main">
+                                    <div class="excerpt__header">
+                                        <span class="label label--grayed-out spacer">
+                                            Inschrijving afgelopen
+                                        </span>
+                                        <div class="meta spacer--xsm">
+                                            <div class="meta__item meta__item--date"><i class="material-icons">today</i> 14 November 2015</div>
+                                            <div class="meta__item meta__item--time"><i class="material-icons">access_time</i> 15:00 – 01:00</div>
+                                            <div class="meta__item meta__item--location"><i class="material-icons">place</i> Heverlee</div>
+                                        </div>
+                                        <h4 class="excerpt__title"><a href="#">B.Ir.-Dag 2015</a></h4>
+                                    </div>
+                                    <div class="excerpt__ct">
+                                        <div class="excerpt__institution"><a href="#">Vereniging van Bio-ingenieurs</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="excerpt excerpt--activity excerpt--hz-large">
+                                <div class="excerpt__aside">
+                                    <div class="excerpt__img">
+                                        <a href="#">
+                                            <img src="http://lorempixel.com/400/400/" class="image image--full-width">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="excerpt__main">
+                                    <div class="excerpt__header">
+                                        <div class="meta spacer--xsm">
+                                            <div class="meta__item meta__item--date"><i class="material-icons">today</i> 14 November 2015</div>
+                                            <div class="meta__item meta__item--time"><i class="material-icons">access_time</i> 15:00 – 01:00</div>
+                                            <div class="meta__item meta__item--location"><i class="material-icons">place</i> Heverlee</div>
+                                        </div>
+                                        <h4 class="excerpt__title"><a href="#">B.Ir.-Dag 2015</a></h4>
+                                    </div>
+                                    <div class="excerpt__ct spacer">
+                                        <div class="excerpt__institution"><a href="#">Vereniging van Bio-ingenieurs</a></div>
+                                    </div>
+                                    <span class="label label--grayed-out spacer">
+                                        Inschrijving afgelopen
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="text--label spacer--med">Normal</p>
+                            <div class="excerpt excerpt--activity">
+                                <div class="excerpt__aside">
+                                    <div class="excerpt__img">
+                                        <a href="#">
+                                            <img src="http://lorempixel.com/400/400/" class="image image--full-width">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="excerpt__main">
+                                    <div class="excerpt__header">
+                                        <div class="meta">
+                                            <div class="meta__item meta__item--date"><i class="material-icons">today</i>  7 May 2016</div>
+                                            <div class="meta__item meta__item--time"><i class="material-icons">access_time</i> 20:30 – 23:00</div>
+                                            <div class="meta__item meta__item--location"><i class="material-icons">place</i> Leuven</div>
+                                        </div>
+                                        <h4 class="excerpt__title"><a href="#">Concert Lagrime di San Pietro, Orlando di Lasso</a></h4>
+                                    </div>
+                                    <div class="excerpt__ct">
+                                        <div class="excerpt__institution"><a href="#">Dienst Alumni</a>, <a href="#">Kunsthistorici, Archeologie, Musicologie</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="excerpt excerpt--activity">
+                                <div class="excerpt__aside">
+                                    <div class="excerpt__img">
+                                        <a href="#">
+                                            <img src="http://lorempixel.com/400/400/" class="image image--full-width">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="excerpt__main">
+                                    <div class="excerpt__header">
+                                        <div class="meta">
+                                            <div class="meta__item meta__item--date"><i class="material-icons">today</i>  7 May 2016</div>
+                                            <div class="meta__item meta__item--time"><i class="material-icons">access_time</i> 20:30 – 23:00</div>
+                                            <div class="meta__item meta__item--location"><i class="material-icons">place</i> Leuven</div>
+                                        </div>
+                                        <h4 class="excerpt__title"><a href="#">Concert Lagrime di San Pietro, Orlando di Lasso</a></h4>
+                                    </div>
+                                    <div class="excerpt__ct">
+                                        <div class="excerpt__institution"><a href="#">Dienst Alumni</a>, <a href="#">Kunsthistorici, Archeologie, Musicologie</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text--label spacer--med">Small</p>
+                            <div class="excerpt excerpt--activity excerpt--hz-small">
+                                <div class="excerpt__aside">
+                                    <div class="excerpt__img">
+                                        <a href="#">
+                                            <img src="http://lorempixel.com/400/400/" class="image image--full-width">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="excerpt__main">
+                                    <div class="excerpt__header">
+                                        <div class="meta">
+                                            <div class="meta__item meta__item--date"><i class="material-icons">today</i>  7 May 2016</div>
+                                            <div class="meta__item meta__item--time"><i class="material-icons">access_time</i> 20:30 – 23:00</div>
+                                            <div class="meta__item meta__item--location"><i class="material-icons">place</i> Leuven</div>
+                                        </div>
+                                        <h4 class="excerpt__title"><a href="#">Concert Lagrime di San Pietro, Orlando di Lasso</a></h4>
+                                    </div>
+                                    <div class="excerpt__ct">
+                                        <div class="excerpt__institution"><a href="#">Dienst Alumni</a>, <a href="#">Kunsthistorici, Archeologie, Musicologie</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="excerpt excerpt--activity excerpt--hz-small">
+                                <div class="excerpt__aside">
+                                    <div class="excerpt__img">
+                                        <a href="#">
+                                            <img src="http://lorempixel.com/400/400/" class="image image--full-width">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="excerpt__main">
+                                    <div class="excerpt__header">
+                                        <div class="meta">
+                                            <div class="meta__item meta__item--date"><i class="material-icons">today</i>  7 May 2016</div>
+                                            <div class="meta__item meta__item--time"><i class="material-icons">access_time</i> 20:30 – 23:00</div>
+                                            <div class="meta__item meta__item--location"><i class="material-icons">place</i> Leuven</div>
+                                        </div>
+                                        <h4 class="excerpt__title"><a href="#">Concert Lagrime di San Pietro, Orlando di Lasso</a></h4>
+                                    </div>
+                                    <div class="excerpt__ct">
+                                        <div class="excerpt__institution"><a href="#">Dienst Alumni</a>, <a href="#">Kunsthistorici, Archeologie, Musicologie</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-excerpt" class="html">&#x3C;!-- Large | .excerpt--hz-large --&#x3E;
+
+&#x3C;div class=&#x22;excerpt excerpt--activity excerpt--hz-large&#x22;&#x3E;
+    &#x3C;div class=&#x22;excerpt__aside&#x22;&#x3E;
+        &#x3C;div class=&#x22;excerpt__img&#x22;&#x3E;
+            &#x3C;a href=&#x22;#&#x22;&#x3E;
+                &#x3C;img src=&#x22;...&#x22; class=&#x22;image image--full-width&#x22;&#x3E;
+            &#x3C;/a&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;excerpt__main&#x22;&#x3E;
+        &#x3C;div class=&#x22;excerpt__header&#x22;&#x3E;
+            &#x3C;div class=&#x22;meta&#x22;&#x3E;
+                &#x3C;span class=&#x22;label label--grayed-out&#x22;&#x3E;
+                    Inschrijving afgelopen
+                &#x3C;/span&#x3E;
+                &#x3C;div class=&#x22;meta__item meta__item--date&#x22;&#x3E;&#x3C;i class=&#x22;material-icons&#x22;&#x3E;today&#x3C;/i&#x3E; 14 November 2015&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;meta__item meta__item--time&#x22;&#x3E;&#x3C;i class=&#x22;material-icons&#x22;&#x3E;access_time&#x3C;/i&#x3E; 15:00 &#x2013; 01:00&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;meta__item meta__item--location&#x22;&#x3E;&#x3C;i class=&#x22;material-icons&#x22;&#x3E;place&#x3C;/i&#x3E; Heverlee&#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;h4 class=&#x22;excerpt__title&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;B.Ir.-Dag 2015&#x3C;/a&#x3E;&#x3C;/h4&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;excerpt__ct&#x22;&#x3E;
+            &#x3C;div class=&#x22;excerpt__institution&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Vereniging van Bio-ingenieurs&#x3C;/a&#x3E;&#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;excerpt excerpt--activity excerpt--hz-large&#x22;&#x3E;
+    &#x3C;div class=&#x22;excerpt__aside&#x22;&#x3E;
+        &#x3C;div class=&#x22;excerpt__img&#x22;&#x3E;
+            &#x3C;a href=&#x22;#&#x22;&#x3E;
+                &#x3C;img src=&#x22;...&#x22; class=&#x22;image image--full-width&#x22;&#x3E;
+            &#x3C;/a&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;excerpt__main&#x22;&#x3E;
+        &#x3C;div class=&#x22;excerpt__header&#x22;&#x3E;
+            &#x3C;div class=&#x22;meta&#x22;&#x3E;
+                &#x3C;span class=&#x22;label label--grayed-out&#x22;&#x3E;
+                    Inschrijving afgelopen
+                &#x3C;/span&#x3E;
+                &#x3C;div class=&#x22;meta__item meta__item--date&#x22;&#x3E;&#x3C;i class=&#x22;material-icons&#x22;&#x3E;today&#x3C;/i&#x3E; 20 November 2015&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;meta__item meta__item--time&#x22;&#x3E;&#x3C;i class=&#x22;material-icons&#x22;&#x3E;access_time&#x3C;/i&#x3E; 21:00 &#x2013; 23:00&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;meta__item meta__item--location&#x22;&#x3E;&#x3C;i class=&#x22;material-icons&#x22;&#x3E;place&#x3C;/i&#x3E; Leuven&#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;h4 class=&#x22;excerpt__title&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Lezing Kennis en Maatschappij door Minister Koen Geens&#x3C;/a&#x3E;&#x3C;/h4&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;excerpt__ct&#x22;&#x3E;
+            &#x3C;div class=&#x22;excerpt__institution&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Politica Oud-studenten&#x3C;/a&#x3E;&#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;!-- Normal --&#x3E;
+
+&#x3C;div class=&#x22;excerpt excerpt--activity&#x22;&#x3E;
+    ...
+&#x3C;/div&#x3E;
+
+&#x3C;!-- Small | .excerpt--hz-small --&#x3E;
+
+&#x3C;div class=&#x22;excerpt excerpt--activity excerpt--hz-small&#x22;&#x3E;
+    ...
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-excerpt">copy</button>
+                </div>
+
+                <div id="gallery" class="spacer--lrg">
+                    <h2>Gallerij: Colorbox</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <p class="text--label">Colorbox één foto</p>
+                            <div class="block">
+                                <div class="images">
+                                    <a href="http://i.dailymail.co.uk/i/pix/2015/01/06/2473100D00000578-2898639-Photographer_Andrey_Gudkov_snapped_the_images_on_the_plains_of_t-a-20_1420546215677.jpg" class="colorbox">
+                                        <img src="http://i.dailymail.co.uk/i/pix/2015/01/06/2473100D00000578-2898639-Photographer_Andrey_Gudkov_snapped_the_images_on_the_plains_of_t-a-20_1420546215677.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-12" class="html">&#x3C;div class=&#x22;block&#x22;&#x3E;
+    &#x3C;div class=&#x22;images&#x22;&#x3E;
+        &#x3C;a href=&#x22;...&#x22; class=&#x22;colorbox&#x22;&#x3E;
+            &#x3C;img src=&#x22;...&#x22;&#x3E;
+        &#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-12">copy</button>
+
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <p class="text--label">Colorbox Album</p>
+                            <div class="block">
+                                <div class="images">
+                                    <a rel="album" href="http://i.dailymail.co.uk/i/pix/2015/01/06/2473100D00000578-2898639-Photographer_Andrey_Gudkov_snapped_the_images_on_the_plains_of_t-a-20_1420546215677.jpg" class="colorbox">
+                                        <img src="http://i.dailymail.co.uk/i/pix/2015/01/06/2473100D00000578-2898639-Photographer_Andrey_Gudkov_snapped_the_images_on_the_plains_of_t-a-20_1420546215677.jpg">
+                                        <span class="images__more">
+                                            <i class="material-icons">collections</i> 2
+                                        </span>
+                                    </a>
+                                </div>
+                                <a href="http://i.dailymail.co.uk/i/pix/2015/06/26/08/29F516A400000578-3139358-image-m-16_1435303536882.jpg" rel="album" class="colorbox superhidden"></a>
+                            </div>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-13" class="html">&#x3C;div class=&#x22;block&#x22;&#x3E;
+    &#x3C;div class=&#x22;images&#x22;&#x3E;
+        &#x3C;a rel=&#x22;album&#x22; href=&#x22;...&#x22; class=&#x22;colorbox&#x22;&#x3E;
+            &#x3C;img src=&#x22;...&#x22;&#x3E;
+            &#x3C;span class=&#x22;images__more&#x22;&#x3E;
+                &#x3C;i class=&#x22;material-icons&#x22;&#x3E;collections&#x3C;/i&#x3E; 2
+            &#x3C;/span&#x3E;
+        &#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;a href=&#x22;...&#x22; rel=&#x22;album&#x22; class=&#x22;colorbox superhidden&#x22;&#x3E;&#x3C;/a&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-13">copy</button>
+                </div>
+
+                <div id="inline" class="spacer--lrg">
+                    <h2>Inline</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <p class="text--label">Inline tekst</p>
+                            <div class="inline">
+                                <div class="inline__item">
+                                    Item inline 1
+                                </div>
+                                <div class="inline__item">
+                                    Item inline 2
+                                </div>
+                                <div class="inline__item">
+                                    Item inline 3
+                                </div>
+                            </div>
+                            <hr>
+                            <p class="text--label">Inline knoppen</p>
+                            <div class="inline">
+                                <div class="inline__item">
+                                    <a href="#" class="btn ">Button 1</a>
+                                </div>
+                                <div class="inline__item">
+                                    <a href="#" class="btn ">Button 2</a>
+                                </div>
+                                <div class="inline__item">
+                                    <a href="#" class="btn ">Button 3</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-14" class="html">&#x3C;div class=&#x22;inline&#x22;&#x3E;
+    &#x3C;div class=&#x22;inline__item&#x22;&#x3E;
+        Item inline 1
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;inline__item&#x22;&#x3E;
+        Item inline 2
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;inline__item&#x22;&#x3E;
+        Item inline 3
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- Inline Knoppen --&#x3E;
+&#x3C;div class=&#x22;inline&#x22;&#x3E;
+    &#x3C;div class=&#x22;inline__item&#x22;&#x3E;
+        &#x3C;a href=&#x22;#&#x22; class=&#x22;btn &#x22;&#x3E;Button 1&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;inline__item&#x22;&#x3E;
+        &#x3C;a href=&#x22;#&#x22; class=&#x22;btn &#x22;&#x3E;Button 2&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;inline__item&#x22;&#x3E;
+        &#x3C;a href=&#x22;#&#x22; class=&#x22;btn &#x22;&#x3E;Button 3&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-14">copy</button>
+                </div>
+
+                <div id="label" class="spacer--lrg">
+                    <h2>Label</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <p class="text--label">Label</p>
+                            <h2>Voorbeeld <span class="label">label</span></h2>
+                            <h2>Voorbeeld <span class="label label--grayed-out">label</span></h2>
+                            <hr>
+                            <p class="text--label">Label variant notice kleuren</p>
+                            <p>Voorbeeld <span class="label label--success">label</span></p>
+                            <p>Voorbeeld <span class="label label--info">label</span></p>
+                            <p>Voorbeeld <span class="label label--warning">label</span></p>
+                            <p>Voorbeeld <span class="label label--danger">label</span></p>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-15" class="html">&#x3C;h2&#x3E;Voorbeeld &#x3C;span class=&#x22;label&#x22;&#x3E;label&#x3C;/span&#x3E;&#x3C;/h2&#x3E;
+&#x3C;h2&#x3E;Voorbeeld &#x3C;span class=&#x22;label label--grayed-out&#x22;&#x3E;label&#x3C;/span&#x3E;&#x3C;/h2&#x3E;
+&#x3C;!-- Label variant notice kleuren --&#x3E;
+&#x3C;p&#x3E;Voorbeeld &#x3C;span class=&#x22;label label--success&#x22;&#x3E;label&#x3C;/span&#x3E;&#x3C;/p&#x3E;
+&#x3C;p&#x3E;Voorbeeld &#x3C;span class=&#x22;label label--info&#x22;&#x3E;label&#x3C;/span&#x3E;&#x3C;/p&#x3E;
+&#x3C;p&#x3E;Voorbeeld &#x3C;span class=&#x22;label label--warning&#x22;&#x3E;label&#x3C;/span&#x3E;&#x3C;/p&#x3E;
+&#x3C;p&#x3E;Voorbeeld &#x3C;span class=&#x22;label label--danger&#x22;&#x3E;label&#x3C;/span&#x3E;&#x3C;/p&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-15">copy</button>
+                </div>
+
+                <div id="meta" class="spacer--lrg">
+                    <h2>Meta</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <div class="meta">
+                                <div class="meta__item meta__item--date"><i class="material-icons">today</i> 26 November 2015</div>
+                                <div class="meta__item meta__item--time"><i class="material-icons">access_time</i> 15:00 – 01:00</div>
+                                <div class="meta__item meta__item--location"><i class="material-icons">place</i> Heverlee</div>
+                            </div>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-meta" class="html">&#x3C;div class=&#x22;meta&#x22;&#x3E;
+    &#x3C;div class=&#x22;meta__item meta__item--date&#x22;&#x3E;&#x3C;i class=&#x22;material-icons&#x22;&#x3E;today&#x3C;/i&#x3E; 26 November 2015&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;meta__item meta__item--time&#x22;&#x3E;&#x3C;i class=&#x22;material-icons&#x22;&#x3E;access_time&#x3C;/i&#x3E; 15:00 &#x2013; 01:00&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;meta__item meta__item--location&#x22;&#x3E;&#x3C;i class=&#x22;material-icons&#x22;&#x3E;place&#x3C;/i&#x3E; Heverlee&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-meta">copy</button>
+                </div>
+
+                <div id="notice" class="spacer--lrg">
+                    <h2>Notice</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <div class="spacer">
+                                <div class="notice">Standaard melding.</div>
+                                <div class="notice notice--success"><strong>Succes</strong> succesvol gedaan!</div>
+                                <div class="notice notice--info"><strong>Info</strong> Dit is een info bericht.</div>
+                                <div class="notice notice--warning"><strong>Waarschuwing</strong> Dit is een waarschuwing!</div>
+                                <div class="notice notice--danger"><strong>Gevaar</strong> Pas op!</div>
+                            </div>
+                            <div class="spacer">
+                                <p class="text--label">Melding die je kan sluiten</p>
+                                <div class="notice notice--warning alert">
+                                    <button type="button" class="btn--close" data-dismiss="alert" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <strong>Waarschuwing</strong> Deze kan je sluiten.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-16" class="html">&#x3C;div class=&#x22;notice&#x22;&#x3E;Standaard melding&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;notice notice--success&#x22;&#x3E;&#x3C;strong&#x3E;Succes&#x3C;/strong&#x3E; succesvol gedaan!&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;notice notice--info&#x22;&#x3E;&#x3C;strong&#x3E;Info&#x3C;/strong&#x3E; Dit is een info bericht.&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;notice notice--warning&#x22;&#x3E;&#x3C;strong&#x3E;Waarschuwing&#x3C;/strong&#x3E; Dit is een waarschuwing!&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;notice notice--danger&#x22;&#x3E;&#x3C;strong&#x3E;Gevaar&#x3C;/strong&#x3E; Pas op!&#x3C;/div&#x3E;
+&#x3C;!-- Melding die je kan sluiten --&#x3E;
+&#x3C;div class=&#x22;notice notice--warning alert&#x22;&#x3E;
+    &#x3C;button type=&#x22;button&#x22; class=&#x22;btn--close&#x22; data-dismiss=&#x22;alert&#x22; aria-label=&#x22;Close&#x22;&#x3E;
+        &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;&#x26;times;&#x3C;/span&#x3E;
+    &#x3C;/button&#x3E;
+    &#x3C;strong&#x3E;Waarschuwing&#x3C;/strong&#x3E; Deze kan je sluiten
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-16">copy</button>
+                </div>
+
+                <div id="pagination" class="spacer--lrg">
+                    <h2>Paginatie</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <p class="text--label">Standaard paginatie</p>
+                            <ul class="pagination">
+                                <li class="pagination__item">
+                                    <a class="prev disabled pagination__prev-next" href="#">« <span class="visuallyhidden">Vorige</span></a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="active pagination__btn" href="#">1</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__btn" href="#">2</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__btn" href="#">3</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="next pagination__prev-next" href="#"><span class="visuallyhidden">Volgende</span> »</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-17" class="html">&#x3C;ul class=&#x22;pagination&#x22;&#x3E;
+    &#x3C;li class=&#x22;pagination__item&#x22;&#x3E;
+        &#x3C;a class=&#x22;prev disabled pagination__prev-next&#x22; href=&#x22;#&#x22;&#x3E;&#xAB; &#x3C;span class=&#x22;visuallyhidden&#x22;&#x3E;Vorige&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+    &#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;pagination__item&#x22;&#x3E;
+        &#x3C;a class=&#x22;active pagination__btn&#x22; href=&#x22;#&#x22;&#x3E;1&#x3C;/a&#x3E;
+    &#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;pagination__item&#x22;&#x3E;
+        &#x3C;a class=&#x22;pagination__btn&#x22; href=&#x22;#&#x22;&#x3E;2&#x3C;/a&#x3E;
+    &#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;pagination__item&#x22;&#x3E;
+        &#x3C;a class=&#x22;pagination__btn&#x22; href=&#x22;#&#x22;&#x3E;3&#x3C;/a&#x3E;
+    &#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;pagination__item&#x22;&#x3E;
+        &#x3C;a class=&#x22;next pagination__prev-next&#x22; href=&#x22;#&#x22;&#x3E;&#xBB; &#x3C;span class=&#x22;visuallyhidden&#x22;&#x3E;Volgende&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+    &#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-17">copy</button>
+                </div>
+
+                <div id="panel" class="spacer--lrg">
+                    <h2>Panel</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <p class="text--label">Panel</p>
+                            <div class="panel spacer">
+                                <div class="panel__header">
+                                    Header
+                                </div>
+                                <div class="panel__body">
+                                    Body
+                                </div>
+                                <div class="panel__footer">
+                                    Footer
+                                </div>
+                            </div>
+                            <p class="text--label spacer--lrg">Panel background</p>
+                            <div class="panel--bg">
+                                <div class="panel__header">
+                                    Header
+                                </div>
+                                <div class="panel__body">
+                                    Body
+                                </div>
+                                <div class="panel__footer">
+                                    Footer
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-18" class="html">&#x3C;div class=&#x22;panel&#x22;&#x3E;
+    &#x3C;div class=&#x22;panel__header&#x22;&#x3E;
+        ...
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;panel__body&#x22;&#x3E;
+        ...
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;panel__footer&#x22;&#x3E;
+        ...
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;!-- Panel Background --&#x3E;
+&#x3C;div class=&#x22;panel--bg&#x22;&#x3E;
+    &#x3C;div class=&#x22;panel__header&#x22;&#x3E;
+        ...
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;panel__body&#x22;&#x3E;
+        ...
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;panel__footer&#x22;&#x3E;
+        ...
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-18">copy</button>
+                </div>
+
+                <div id="progress" class="spacer--lrg">
+                    <h2>Progress</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <div class="progress progress--values-top">
+                                <div class="progress__bar progress__bar--success" style="width: 22%">
+                                    <span class="progress__text">22%</span>
+                                </div>
+                                <div class="progress__bar progress__bar--info" style="width: 34%">
+                                    <span class="progress__text">34%</span>
+                                </div>
+                                <div class="progress__bar progress__bar--warning" style="width: 16%">
+                                    <span class="progress__text">16%</span>
+                                </div>
+                                <div class="progress__bar progress__bar--danger" style="width: 28%">
+                                    <span class="progress__text">28%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-19" class="html">&#x3C;div class=&#x22;progress progress--values-top&#x22;&#x3E;
+    &#x3C;div class=&#x22;progress__bar progress__bar--success&#x22; style=&#x22;width: 22%&#x22;&#x3E;
+        &#x3C;span class=&#x22;progress__text&#x22;&#x3E;22%&#x3C;/span&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;progress__bar progress__bar--info&#x22; style=&#x22;width: 34%&#x22;&#x3E;
+        &#x3C;span class=&#x22;progress__text&#x22;&#x3E;34%&#x3C;/span&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;progress__bar progress__bar--warning&#x22; style=&#x22;width: 16%&#x22;&#x3E;
+        &#x3C;span class=&#x22;progress__text&#x22;&#x3E;16%&#x3C;/span&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;progress__bar progress__bar--danger&#x22; style=&#x22;width: 28%&#x22;&#x3E;
+        &#x3C;span class=&#x22;progress__text&#x22;&#x3E;28%&#x3C;/span&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-19">copy</button>
+                </div>
+
+                <div id="scrolltop" class="spacer--lrg">
+                    <h2>Scroll to top</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <p class="text--label">Kijk rechtsonder in de hoek van je browser.</p>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-scrolltop" class="html">&#x3C;a href=&#x22;#&#x22; class=&#x22;scroll-to-top&#x22;&#x3E;&#x3C;i class=&#x22;material-icons&#x22;&#x3E;keyboard_arrow_up&#x3C;/i&#x3E;&#x3C;/a&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-scrolltop">copy</button>
+                </div>
+
+                <div id="share" class="spacer--lrg">
+                    <h2>Share</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <div class="inline inline--share">
+                                <div class="inline__item">Share</div>
+                                <div class="inline__item">
+                                    <a href="#"><svg role="img" title="facebook" width="25" height="25">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/social.svg#facebook"></use>
+                                    </svg></a>
+                                </div>
+                                <div class="inline__item">
+                                    <a href="#"><svg role="img" title="twitter" width="25" height="25">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/social.svg#twitter"></use>
+                                    </svg></a>
+                                </div>
+                                <div class="inline__item">
+                                    <a href="#"><svg role="img" title="linkedin" width="25" height="25">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/social.svg#instagram"></use>
+                                    </svg></a>
+                                </div>
+                                <div class="inline__item">
+                                    <a href="#"><svg role="img" title="linkedin" width="25" height="25">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/social.svg#linkedin"></use>
+                                    </svg></a>
+                                </div>
+                                <div class="inline__item">
+                                    <a href="#"><svg role="img" title="linkedin" width="25" height="25">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/social.svg#youtube"></use>
+                                    </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-21" class="html">&#x3C;div class=&#x22;inline inline--share&#x22;&#x3E;
+    &#x3C;div class=&#x22;inline__item&#x22;&#x3E;Share&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;inline__item&#x22;&#x3E;
+        &#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;svg role=&#x22;img&#x22; title=&#x22;facebook&#x22; width=&#x22;25&#x22; height=&#x22;25&#x22;&#x3E;
+                &#x3C;use xmlns:xlink=&#x22;http://www.w3.org/1999/xlink&#x22; xlink:href=&#x22;/img/svg/social.svg#facebook&#x22;&#x3E;&#x3C;/use&#x3E;
+        &#x3C;/svg&#x3E;&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;inline__item&#x22;&#x3E;
+        &#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;svg role=&#x22;img&#x22; title=&#x22;linkedin&#x22; width=&#x22;25&#x22; height=&#x22;25&#x22;&#x3E;
+                &#x3C;use xmlns:xlink=&#x22;http://www.w3.org/1999/xlink&#x22; xlink:href=&#x22;/img/svg/social.svg#...&#x22;&#x3E;&#x3C;/use&#x3E;
+        &#x3C;/svg&#x3E;&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-21">copy</button>
+                </div>
+
+                <div id="spacer" class="spacer--lrg">
+                    <h2>Spacer</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <div class="block--bg spacer">Dit element bevat de class <strong>(.spacer)</strong></div>
+                            <div class="block--bg spacer--xlr">Dit element bevat de class <strong>(.spacer--xlr)</strong></div>
+                            <hr>
+                            <div class="notice notice--info spacer--sml">
+                                Classes die je kan gebruiken:
+                                <div class="inline inline--divider">
+                                    <div class="inline__item"><strong>.spacer--xxs</strong></div><div class="inline__item"><strong>.spacer--xsm</strong></div><div class="inline__item"><strong>.spacer / .spacer--sml</strong></div><div class="inline__item"><strong>.spacer--med</strong></div><div class="inline__item"><strong>.spacer--lrg</strong></div><div class="inline__item"><strong>.spacer--xlr</strong></div>
+                                </div>
+                            </div>
+                            <div class="notice notice--danger"><strong>Opgelet!</strong> De class (.spacer--...) moet altijd op de beide elementen staan waar je ruimte tussen wilt.</div>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-22" class="html">&#x3C;div class=&#x22;spacer--...&#x22;&#x3E;...&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;spacer--...&#x22;&#x3E;...&#x3C;/div&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-22">copy</button>
+                </div>
+
+                <div id="tabs" class="spacer--lrg">
+                    <h2>Tabs</h2>
+                    <div class="panel spacer--lrg">
+                        <div class="panel__body">
+                            <div class="tab">
+                                <!-- Nav tabs -->
+                                <ul class="tabbable" role="tablist">
+                                    <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Tab 1</a></li>
+                                    <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Tab 2</a></li>
+                                    <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Tab 3</a></li>
+                                    <li role="presentation"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">Tab 4</a></li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tabs__content">
+                                    <div role="tabpanel" class="tabs__pane active" id="tab1">Content tab 1</div>
+                                    <div role="tabpanel" class="tabs__pane" id="tab2">Content tab 2</div>
+                                    <div role="tabpanel" class="tabs__pane" id="tab3">Content tab 3</div>
+                                    <div role="tabpanel" class="tabs__pane" id="tab4">Content tab 4</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel__code">
+                            <pre><code id="copy-23" class="html">&#x3C;div class=&#x22;tab&#x22;&#x3E;
+    &#x3C;!-- Nav tabs --&#x3E;
+    &#x3C;ul class=&#x22;tabbable&#x22; role=&#x22;tablist&#x22;&#x3E;
+        &#x3C;li role=&#x22;presentation&#x22; class=&#x22;active&#x22;&#x3E;&#x3C;a href=&#x22;#tab1&#x22; aria-controls=&#x22;tab1&#x22; role=&#x22;tab&#x22; data-toggle=&#x22;tab&#x22;&#x3E;Tab 1&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li role=&#x22;presentation&#x22;&#x3E;&#x3C;a href=&#x22;#tab2&#x22; aria-controls=&#x22;tab2&#x22; role=&#x22;tab&#x22; data-toggle=&#x22;tab&#x22;&#x3E;Tab 2&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li role=&#x22;presentation&#x22;&#x3E;&#x3C;a href=&#x22;#tab3&#x22; aria-controls=&#x22;tab3&#x22; role=&#x22;tab&#x22; data-toggle=&#x22;tab&#x22;&#x3E;Tab 3&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li role=&#x22;presentation&#x22;&#x3E;&#x3C;a href=&#x22;#tab4&#x22; aria-controls=&#x22;tab4&#x22; role=&#x22;tab&#x22; data-toggle=&#x22;tab&#x22;&#x3E;Tab 4&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+    &#x3C;!-- Tab panes --&#x3E;
+    &#x3C;div class=&#x22;tabs__content&#x22;&#x3E;
+        &#x3C;div role=&#x22;tabpanel&#x22; class=&#x22;tabs__pane active&#x22; id=&#x22;tab1&#x22;&#x3E;Content tab 1&#x3C;/div&#x3E;
+        &#x3C;div role=&#x22;tabpanel&#x22; class=&#x22;tabs__pane&#x22; id=&#x22;tab2&#x22;&#x3E;Content tab 2&#x3C;/div&#x3E;
+        &#x3C;div role=&#x22;tabpanel&#x22; class=&#x22;tabs__pane&#x22; id=&#x22;tab3&#x22;&#x3E;Content tab 3&#x3C;/div&#x3E;
+        &#x3C;div role=&#x22;tabpanel&#x22; class=&#x22;tabs__pane&#x22; id=&#x22;tab4&#x22;&#x3E;Content tab 4&#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+                    </div>
+                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-23">copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/highlight.js/8.9.1/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.1/clipboard.min.js"></script>
+    <script type="text/javascript">
+        window.app = window.app || {};
+        app.variables = {
+            assetsPath: "/",
+        };
+    </script>
+    <!--[if lt IE 9]><script type="text/javascript" src="/2016tmp/js/selectivizr.min.js"></script><![endif]-->
+    <script type="text/javascript" src="/js/main.min.js"></script>
+    <script>
+        (function() {
+            hljs.initHighlightingOnLoad();
+            new Clipboard('.btn');
+        })();
+    </script>
+
+
+</body>
+</html>

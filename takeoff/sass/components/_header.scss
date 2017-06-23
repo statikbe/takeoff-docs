@@ -1,0 +1,22 @@
+.page-header {
+  @include cf;
+  padding: $rh-xsm 0;
+  border-bottom: 1px solid darken($gray-0, 4%);
+  &__logo {
+    display: block;
+    width: 240px;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    @include breakpoint(map-get($breakpoints, sml), max-width) {
+      clear: both;
+      margin: 0 auto;
+    }
+    @include breakpoint(map-get($breakpoints, sml)) {
+      float: left;
+      margin-right: $rh-sml;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.card {
+  @include cf;
+  display: block;
+  color: inherit;
+
+  &__block {
+    padding: $rh-sml;
+    & + & {
+      padding-top: 0;
+    }
+  }
+
+  &__img {
+    overflow: hidden;
+    img {
+      @include transitions(all);
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__link {
+    @include transitions(color);
+    display: inline-block;
+    color: $color-link;
+    text-decoration: underline;
+  }
+
+  &__aside {
+    @include breakpoint(map-get($breakpoints, sml)) {
+      float: left;
+      margin-right: $grid-gutter-width;
+      // max-width: 180px;
+      + .card__main {
+        overflow-x: hidden;
+      }
+    }
+  }
+}
+
+
+a.card,
+.card--link {
+  @include link-variant(inherit);
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    #{$headings} {
+      color: inherit;
+    }
+    .card__img {
+      img {
+        transform: translateZ(0) scale(1.05);
+      }
+    }
+    .card__link {
+      color: $color-link;
+      text-decoration: none;
+    }
+  }
+}

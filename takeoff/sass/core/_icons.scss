@@ -1,0 +1,111 @@
+%ext-icon-style {
+  display: inline-block;
+  border: none;
+  font-family: "icons";
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  font-size: inherit;
+  line-height: inherit;
+  text-indent: 0;
+  text-transform: none;
+  vertical-align: bottom;
+  text-rendering: auto; // optimizelegibility throws things off #1094
+  transform: translate(0, 0); // ensures no half-pixel rendering in firefox
+}
+
+// Include fonts
+//
+@font-face {
+  font-family: "icons";
+  src: url("./takeoff//fonts/icons.eot?075535c758db6ffd2660bb9839f4e172");
+  src: url("./takeoff//fonts/icons.eot?#iefix") format("embedded-opentype"),
+		url("./takeoff//fonts/icons.woff?075535c758db6ffd2660bb9839f4e172") format("woff"),
+		url("./takeoff//fonts/icons.ttf?075535c758db6ffd2660bb9839f4e172") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  &:before,
+  &:after {
+    @extend %ext-icon-style;
+  }
+  &--social {
+    @include fsRem(28px);
+    line-height: 1;
+  }
+}
+
+// Icons
+.icon--envelope:before {
+  content:"\f101";
+}
+.icon--facebook:before {
+  content:"\f102";
+}
+.icon--google-plus:before {
+  content:"\f103";
+}
+.icon--instagram:before {
+  content:"\f104";
+}
+.icon--linkedin:before {
+  content:"\f105";
+}
+.icon--pinterest:before {
+  content:"\f118";
+}
+.icon--twitter:before {
+  content:"\f107";
+}
+.icon--youtube:before {
+  content:"\f108";
+}
+.icon--add:before {
+  content:"\f109";
+}
+.icon--arrow-back:before {
+  content:"\f10a";
+}
+.icon--arrow-forward:before {
+  content:"\f10b";
+}
+.icon--check:before {
+  content:"\f10c";
+}
+.icon--clear:before {
+  content:"\f10d";
+}
+.icon--download:before {
+  content:"\f119";
+}
+.icon--home:before {
+  content:"\f10e";
+}
+.icon--keyboard-arrow-down:before {
+  content:"\f10f";
+}
+.icon--keyboard-arrow-left:before {
+  content:"\f110";
+}
+.icon--keyboard-arrow-right:before {
+  content:"\f111";
+}
+.icon--keyboard-arrow-up:before {
+  content:"\f112";
+}
+.icon--location-on:before {
+  content:"\f113";
+}
+.icon--menu:before {
+  content:"\f114";
+}
+.icon--phone:before {
+  content:"\f115";
+}
+.icon--play-arrow:before {
+  content:"\f116";
+}
+.icon--remove:before {
+  content:"\f117";
+}
