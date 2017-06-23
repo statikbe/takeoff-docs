@@ -45,53 +45,54 @@ permalink: /
         </div>
     </div>
 </div>
-<div class="section">
+<div class="section section--default">
     <div class="container">
         <div class="grid">
             <div class="grid__12 grid--bp-med__8 grid--bp-med__offset-2">
                 <p><strong>Basis html template</strong></p>
-                <div class="block block--code"><pre><code id="copy-3" class="html">&lt;!doctype html&gt;
-&lt;!--[if IE 7]&gt; &lt;html class=&quot;no-js lt-ie9 lt-ie8 lt-ie10&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;
-&lt;!--[if IE 8]&gt; &lt;html class=&quot;no-js lt-ie9 lt-ie10&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;
-&lt;!--[if IE 9]&gt; &lt;html class=&quot;no-js lt-ie10&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;
-&lt;!--[if gt IE 9]&gt;&lt;!--&gt; &lt;html class=&quot;no-js&quot; lang=&quot;en&quot;&gt; &lt;!--&lt;![endif]--&gt;
-&lt;head&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-    &lt;title&gt;Takeoff&lt;/title&gt;
+                {% highlight html %}
+<!doctype html>
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie10" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9 lt-ie10" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Takeoff</title>
 
-    &lt;!-- Latest compiled and minified CSS --&gt;
-    &lt;!--[if gt IE 8]&gt;&lt;!--&gt;&lt;link rel="stylesheet" href="/css/main.min.css"&gt;&lt;!--&lt;![endif]--&gt;
-    &lt;link rel="icon" type="image/png" href="/img/favicon.png" /&gt;
-    &lt;script type="text/javascript" src="/js/modernizr.min.js"&gt;&lt;/script&gt;
+    <!-- Latest compiled and minified CSS -->
+    <!--[if gt IE 8]><!--><link rel="stylesheet" href="/css/main.min.css"><!--<![endif]-->
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <script type="text/javascript" src="/js/modernizr.min.js"></script>
 
-    &lt;!-- To support older browsers --&gt;
-    &lt;!--[if lt IE 9]&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;//stijl.kuleuven.be/2016tmp/css/main-legacy.min.css&quot;&gt;
-    &lt;script type=&quot;text/javascript&quot; src=&quot;//stijl.kuleuven.be/2016tmp/js/polyfill.min.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
+    <!-- To support older browsers -->
+    <!--[if lt IE 9]><link rel="stylesheet" href="//stijl.kuleuven.be/2016tmp/css/main-legacy.min.css">
+    <script type="text/javascript" src="//stijl.kuleuven.be/2016tmp/js/polyfill.min.js"></script><![endif]-->
 
-&lt;/head&gt;
-&lt;body&gt;
-    &#x3C;div class=&#x22;page-wrap&#x22;&#x3E;
-        &#x3C;header class=&#x22;page-header&#x22;&#x3E;
+</head>
+<body>
+    <div class="page-wrap">
+        <header class="page-header">
             ...
-        &#x3C;/header&#x3E;
-        &#x3C;div class=&#x22;page-main&#x22;&#x3E; role=&#x22;main&#x22;&#x3E;
-            &#x3C;h1&#x3E;Hello world!&#x3C;/h1&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;footer class=&#x22;page-footer&#x22;&#x3E;
+        </header>
+        <div class="page-main"> role="main">
+            <h1>Hello world!</h1>
+        </div>
+        <footer class="page-footer">
             ...
-        &#x3C;/footer&#x3E;
-    &#x3C;/div&#x3E;
+        </footer>
+    </div>
 
-    &lt;!-- Latest compiled and minified JavaScript --&gt;
-    &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="/js/main.min.js"&gt;&lt;/script&gt;
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/main.min.js"></script>
 
-    &lt;!-- To support older browsers --&gt;
-    &lt;!--[if lt IE 9]&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/js/selectivizr.min.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+    <!-- To support older browsers -->
+    <!--[if lt IE 9]><script type="text/javascript" src="/js/selectivizr.min.js"></script><![endif]-->
+</body>
+</html>{% endhighlight %}
                 </div>
             </div>
         </div>

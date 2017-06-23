@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.9.1/styles/github-gist.min.css">
 
     <link rel="icon" type="image/png" href="/img/favicon.png" />
-    <script type="text/javascript" src="/2016tmp/js/modernizr.min.js"></script>
+    <!-- <script type="text/javascript" src="/js/modernizr.min.js"></script> -->
     <!--[if lt IE 9]><script type="text/javascript" src="/js/polyfill.min.js"></script><![endif]-->
 </head>
 
@@ -28,27 +28,33 @@
     <div class="container">
         <nav class="nav nav--main">
             <ul>
-                
-                    
+                <li><a href="/">Home</a></li>
+                <!-- 
+                     -->
                         <!--<li><a class="page-link" href="/">Home</a></li>-->
-                        <li><a class="active" href="/">Home</a></li>
-                    
+                        <!-- <li><a class="active" href="/">Home</a></li> -->
+                    <!-- 
                 
-                    
-                        <!--<li><a class="page-link" href="/grid/">Grid</a></li>-->
-                        <li><a  href="/grid/">Grid</a></li>
-                    
+                     -->
+                        <!--<li><a class="page-link" href="/docs/">Docs</a></li>-->
+                        <!-- <li><a  href="/docs/">Docs</a></li> -->
+                    <!-- 
                 
-                    
+                     -->
                         <!--<li><a class="page-link" href="/core/">Core</a></li>-->
-                        <li><a  href="/core/">Core</a></li>
-                    
+                        <!-- <li><a  href="/core/">Core</a></li> -->
+                    <!-- 
                 
-                    
+                     -->
                         <!--<li><a class="page-link" href="/components/">Components</a></li>-->
-                        <li><a  href="/components/">Components</a></li>
-                    
+                        <!-- <li><a  href="/components/">Components</a></li> -->
+                    <!-- 
                 
+                     -->
+                        <!--<li><a class="page-link" href="/grid/">Grid</a></li>-->
+                        <!-- <li><a  href="/grid/">Grid</a></li> -->
+                    <!-- 
+                 -->
                 <li><a href="/docs">Docs</a></li>
             </ul>
         </nav>
@@ -98,53 +104,53 @@
         </div>
     </div>
 </div>
-<div class="section">
+<div class="section section--default">
     <div class="container">
         <div class="grid">
             <div class="grid__12 grid--bp-med__8 grid--bp-med__offset-2">
                 <p><strong>Basis html template</strong></p>
-                <div class="block block--code"><pre><code id="copy-3" class="html">&lt;!doctype html&gt;
-&lt;!--[if IE 7]&gt; &lt;html class=&quot;no-js lt-ie9 lt-ie8 lt-ie10&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;
-&lt;!--[if IE 8]&gt; &lt;html class=&quot;no-js lt-ie9 lt-ie10&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;
-&lt;!--[if IE 9]&gt; &lt;html class=&quot;no-js lt-ie10&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;
-&lt;!--[if gt IE 9]&gt;&lt;!--&gt; &lt;html class=&quot;no-js&quot; lang=&quot;en&quot;&gt; &lt;!--&lt;![endif]--&gt;
-&lt;head&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-    &lt;title&gt;Takeoff&lt;/title&gt;
+                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="c">&lt;!--[if IE 7]&gt; &lt;html class="no-js lt-ie9 lt-ie8 lt-ie10" lang="en"&gt; &lt;![endif]--&gt;</span>
+<span class="c">&lt;!--[if IE 8]&gt; &lt;html class="no-js lt-ie9 lt-ie10" lang="en"&gt; &lt;![endif]--&gt;</span>
+<span class="c">&lt;!--[if IE 9]&gt; &lt;html class="no-js lt-ie10" lang="en"&gt; &lt;![endif]--&gt;</span>
+<span class="c">&lt;!--[if gt IE 9]&gt;&lt;!--&gt;</span> <span class="nt">&lt;html</span> <span class="na">class=</span><span class="s">"no-js"</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span> <span class="c">&lt;!--&lt;![endif]--&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Takeoff<span class="nt">&lt;/title&gt;</span>
 
-    &lt;!-- Latest compiled and minified CSS --&gt;
-    &lt;!--[if gt IE 8]&gt;&lt;!--&gt;&lt;link rel="stylesheet" href="/css/main.min.css"&gt;&lt;!--&lt;![endif]--&gt;
-    &lt;link rel="icon" type="image/png" href="/img/favicon.png" /&gt;
-    &lt;script type="text/javascript" src="/js/modernizr.min.js"&gt;&lt;/script&gt;
+    <span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
+    <span class="c">&lt;!--[if gt IE 8]&gt;&lt;!--&gt;</span><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/css/main.min.css"</span><span class="nt">&gt;</span><span class="c">&lt;!--&lt;![endif]--&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"icon"</span> <span class="na">type=</span><span class="s">"image/png"</span> <span class="na">href=</span><span class="s">"/img/favicon.png"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"/js/modernizr.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 
-    &lt;!-- To support older browsers --&gt;
-    &lt;!--[if lt IE 9]&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;//stijl.kuleuven.be/2016tmp/css/main-legacy.min.css&quot;&gt;
-    &lt;script type=&quot;text/javascript&quot; src=&quot;//stijl.kuleuven.be/2016tmp/js/polyfill.min.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
+    <span class="c">&lt;!-- To support older browsers --&gt;</span>
+    <span class="c">&lt;!--[if lt IE 9]&gt;&lt;link rel="stylesheet" href="//stijl.kuleuven.be/2016tmp/css/main-legacy.min.css"&gt;
+    &lt;script type="text/javascript" src="//stijl.kuleuven.be/2016tmp/js/polyfill.min.js"&gt;&lt;/script&gt;&lt;![endif]--&gt;</span>
 
-&lt;/head&gt;
-&lt;body&gt;
-    &#x3C;div class=&#x22;page-wrap&#x22;&#x3E;
-        &#x3C;header class=&#x22;page-header&#x22;&#x3E;
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"page-wrap"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"page-header"</span><span class="nt">&gt;</span>
             ...
-        &#x3C;/header&#x3E;
-        &#x3C;div class=&#x22;page-main&#x22;&#x3E; role=&#x22;main&#x22;&#x3E;
-            &#x3C;h1&#x3E;Hello world!&#x3C;/h1&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;footer class=&#x22;page-footer&#x22;&#x3E;
+        <span class="nt">&lt;/header&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"page-main"</span><span class="nt">&gt;</span> role="main"&gt;
+            <span class="nt">&lt;h1&gt;</span>Hello world!<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"page-footer"</span><span class="nt">&gt;</span>
             ...
-        &#x3C;/footer&#x3E;
-    &#x3C;/div&#x3E;
+        <span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 
-    &lt;!-- Latest compiled and minified JavaScript --&gt;
-    &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="/js/main.min.js"&gt;&lt;/script&gt;
+    <span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"/js/main.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 
-    &lt;!-- To support older browsers --&gt;
-    &lt;!--[if lt IE 9]&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/js/selectivizr.min.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+    <span class="c">&lt;!-- To support older browsers --&gt;</span>
+    <span class="c">&lt;!--[if lt IE 9]&gt;&lt;script type="text/javascript" src="/js/selectivizr.min.js"&gt;&lt;/script&gt;&lt;![endif]--&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
                 </div>
             </div>
         </div>

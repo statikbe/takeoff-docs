@@ -58,6 +58,25 @@
     }
   } // end .--main
 
+  &--docu {
+    @extend %ext-default-nav;
+    height: 100%;
+    li {
+      margin: 0 $rh-sml;
+    }
+    a {
+      @include link-variant($color-text, $color-primary);
+      display: block;
+      padding: $rh-xxs 0;
+      font-weight: $font-weight-bold;
+      &:hover,
+      &:focus,
+      &.active {
+        color: $color-primary;
+      }
+    }
+  } // end .--docu
+
   &--language {
     @extend %ext-default-nav;
     @extend %ext-horizontal-nav;

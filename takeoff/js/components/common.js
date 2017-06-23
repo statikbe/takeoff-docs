@@ -15,6 +15,7 @@ app.common = (function commonComponent($, undefined) {
         $window.on('resize', app.helpers.debounce(this.windowResize, 250, false));
 
         colorbox();
+        stickySidebar();
 
     }
 
@@ -53,6 +54,12 @@ app.common = (function commonComponent($, undefined) {
             innerWidth: 640,
             innerHeight: 480
         }));
+    }
+
+    function stickySidebar() {
+
+        $("#sidebar").stick_in_parent();
+
     }
 
     function finalize() {
