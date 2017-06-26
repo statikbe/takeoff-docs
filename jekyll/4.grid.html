@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Grid
 permalink: /grid/
 ---
@@ -8,19 +8,13 @@ permalink: /grid/
     <div class="container">
         <div class="grid">
             <div class="grid__12 grid--bp-med__2">
-                <nav class="nav nav--list">
-                    <ul>
-                        <li><a href="#intro">Introductie</a></li>
-                        <li><a href="#grid">Grid met gelijke kolommen</a></li>
-                        <li><a href="#custom">Grid met ongelijke kolommen</a></li>
-                    </ul>
-                </nav>
+                {% include navigation.html %}
             </div>
 
             <div class="grid__12 grid--bp-med__10">
                 <div id="introductie" class="spacer">
                     <h2>Introductie</h2>
-                    <p class="text--lead--page">Het framework bevat een responsive, mobile first fluid grid systeem met 12 kolommen.</p>
+                    <p class="text--lead">Het framework bevat een responsive, mobile first fluid grid systeem met 12 kolommen.</p>
                     <p>Het grid systeem wordt gebruikt om een layout te cre&euml;ren met rijen en kolommen. Enkele weetjes voor het gebruik ervan:</p>
                     <ul class="list--unordered">
                         <li>Rijen moeten binnen een <code class="html">.container</code> geplaatst worden.</li>
@@ -29,18 +23,6 @@ permalink: /grid/
                         <li>Gebruik rijen om een horizontale groepen van kolommen te cre&euml;ren.</li>
                         <li>De ruimte tussen de kolommen wordt bepaald met een padding. Om die reden heeft elke rij een negatieve marge links en rechts met de breedte van die padding.</li>
                         <li>Omdat onze grid mobile first werkt, werken alle classes zonder een breakpoint (<code class="html">*bp-med*</code>) definitie vanaf een minimum breedte van <strong><small>0px</small></strong>. Wanneer er in de class een breakpoint wordt gedefineerd, werkt die class vanaf het breakpoint en hoger. (Meer info over de breakpoints vind je in <a href="#breakpoints">deze tabel.</a></li>
-                        <li id="gridflex">Om kolommen even hoog te maken (bijvoorbeeld bij <code class="html">.media--cover</code>) kan je <code class="html">.grid--flex</code> toevoegen aan de rij class. <strong>Let op!</strong> Dit maakt enkel je kolommen even hoog, niet de inhoud binnen de kolommen.</li>
-                    </ul>
-                    <p>Het grid bevat twee soorten grid element:</p>
-                    <h3>Grid met gelijke kolommen</h3>
-                    <ul class="list--unordered">
-                        <li>Het aantel kolommen wordt gedefinieerd bij de rij (<code class="html">.grid</code>), <code class="html">.grid grid--bp-sml-2-col grid--bp-lrg-3-col</code> heeft bijvoorbeeld van het <em>sml</em>-breakpoint 2 kolommen en vanag het <em>lrg</em>-breakpoint 2 kolommen.</li>
-                        <li>Elke kolom heeft enkel de <code class="html">.grid__item</code> class</li>
-                    </ul>
-                    <h3>Grid met ongelijke kolommen</h3>
-                    <ul class="list--unordered">
-                        <li>De breedte van de kolom wordt gedefinieerd op de kolom zelf (<code class="html">.grid__1~12</code>). Het grid bevat 12 kolommen, in de class kan je kies je hoeveel kolommen deze kolom breed moet zijn. Ook hier zijn er responsive classes beschikbaar: <code class="html">grid__12 grid--bp-med__6 grid--bp-lrg__4</code>. In dit voorbeeld heb je standaard een kolom die 12 kolommen bevat, wat overeenkomt met 1 kolom binnen de rij. Bij het <em>med</em>-breakpoint overspant deze kolom maar 6 kolommen van de 12, en vanaf het <em>lrg</em>-breakpoint maar 4.</li>
-                        <li>Je kan met dit systeem ook gelijke kolommen maken, maar het is aangewezen om het systeem met gelijke kolommen hiervoor te gebruiken.</li>
                     </ul>
                     <h3>Breakpoints</h3>
                     <dl class="dl--horizontal" id="breakpoints">
@@ -57,122 +39,37 @@ permalink: /grid/
                         <dt class="text--right">xlr</dt>
                         <dd>&ge; 1200px</dd>
                     </dl>
-                    <p>Hieronder enkele voorbeelden voor het gebruik van het grid systeem.</p>
+                    <p>Het grid bevat twee soorten grid element:</p>
+                    <h2 id="equal">Grid met gelijke kolommen</h2>
+                    <ul class="list--unordered">
+                        <li>Het aantel kolommen wordt gedefinieerd bij de rij (<code class="html">.grid</code>), <code class="html">.grid grid--bp-sml-2-col grid--bp-lrg-3-col</code> heeft bijvoorbeeld van het <em>sml</em>-breakpoint 2 kolommen en vanag het <em>lrg</em>-breakpoint 2 kolommen.</li>
+                        <li>Elke kolom heeft enkel de <code class="html">.grid__item</code> class</li>
+                        <li>Meestal gebruikt bij overviews</li>
+                    </ul>
+{% highlight html %}
+<div class="grid grid--bp-sml-2-col grid--bp-lrg-3-col">
+    <div class="grid__item"></div>
+    <div class="grid__item"></div>
+    <div class="grid__item"></div>
+    ...
+</div>{% endhighlight %}
+                    <h2 id="not-equal">Grid met ongelijke kolommen</h2>
+                    <ul class="list--unordered">
+                        <li>De breedte van de kolom wordt gedefinieerd op de kolom zelf (<code class="html">.grid__1~12</code>). Het grid bevat 12 kolommen, in de class kan je kies je hoeveel kolommen deze kolom breed moet zijn. Ook hier zijn er responsive classes beschikbaar: <code class="html">grid__12 grid--bp-med__6 grid--bp-lrg__4</code>. In dit voorbeeld heb je standaard een kolom die 12 kolommen bevat, wat overeenkomt met 1 kolom binnen de rij. Bij het <em>med</em>-breakpoint overspant deze kolom maar 6 kolommen van de 12, en vanaf het <em>lrg</em>-breakpoint maar 4.</li>
+                        <li>Je kan met dit systeem ook gelijke kolommen maken, maar het is aangewezen om het systeem met gelijke kolommen hiervoor te gebruiken.</li>
+                    </ul>
+{% highlight html %}
+<div class="grid">
+    <div class="grid__12 grid--bp-med__6 grid--bp-lrg__4"></div>
+    <div class="grid__12 grid--bp-med__6 grid--bp-lrg__8"></div>
+</div>{% endhighlight %}
                 </div>
 
-                <div id="grid" class="spacer--lrg">
+                <div class="spacer--lrg">
                     <h2>Grid met gelijke kolommen</h2>
                     <div class="panel spacer--lrg">
                         <div class="panel__body">
-                            <p class="text--label spacer">12 kolommen (&ge; 800px)</p>
-                            <div class="grid grid--bp-sml-12-col spacer">
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                            </div>
-                            <p class="text--label spacer">11 kolommen (&ge; 800px)</p>
-                            <div class="grid grid--bp-sml-11-col spacer">
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                            </div>
-                            <p class="text--label spacer">10 kolommen (&ge; 800px)</p>
-                            <div class="grid grid--bp-sml-10-col spacer">
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                            </div>
-                            <p class="text--label spacer">9 kolommen (&ge; 800px)</p>
+                            <p class="text--label spacer">9 kolommen</p>
                             <div class="grid grid--bp-sml-9-col spacer">
                                 <div class="grid__item">
                                     <div class="block--bg">1</div>
@@ -202,97 +99,7 @@ permalink: /grid/
                                     <div class="block--bg">1</div>
                                 </div>
                             </div>
-                            <p class="text--label spacer">8 kolommen (&ge; 800px)</p>
-                            <div class="grid grid--bp-sml-8-col spacer">
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                            </div>
-                            <p class="text--label spacer">7 kolommen (&ge; 800px)</p>
-                            <div class="grid grid--bp-sml-7-col spacer">
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                            </div>
-                            <p class="text--label spacer">6 kolommen (&ge; 800px)</p>
-                            <div class="grid grid--bp-sml-6-col spacer">
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                            </div>
-                            <p class="text--label spacer">5 kolommen (&ge; 800px)</p>
-                            <div class="grid grid--bp-sml-5-col spacer">
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__item">
-                                    <div class="block--bg">1</div>
-                                </div>
-                            </div>
-                            <p class="text--label spacer">4 kolommen (&ge; 800px)</p>
+                            <p class="text--label spacer">4 kolommen</p>
                             <div class="grid grid--bp-sml-4-col spacer">
                                 <div class="grid__item">
                                     <div class="block--bg">1</div>
@@ -307,7 +114,7 @@ permalink: /grid/
                                     <div class="block--bg">1</div>
                                 </div>
                             </div>
-                            <p class="text--label spacer">3 kolommen (&ge; 800px)</p>
+                            <p class="text--label spacer">3 kolommen</p>
                             <div class="grid grid--bp-sml-3-col spacer">
                                 <div class="grid__item">
                                     <div class="block--bg">1</div>
@@ -319,7 +126,7 @@ permalink: /grid/
                                     <div class="block--bg">1</div>
                                 </div>
                             </div>
-                            <p class="text--label spacer">2 kolommen (&ge; 800px)</p>
+                            <p class="text--label spacer">2 kolommen</p>
                             <div class="grid grid--bp-sml-2-col spacer">
                                 <div class="grid__item">
                                     <div class="block--bg">1</div>
@@ -329,164 +136,78 @@ permalink: /grid/
                                 </div>
                             </div>
                         </div>
-                        <div class="panel__code">
-                            <pre><code id="copy-1" class="html">&lt;div class=&quot;grid grid--bp-sml-4-col spacer&quot;&gt;
-    &lt;div class=&quot;grid__item&quot;&gt;
-        &lt;div class=&quot;block--bg&quot;&gt;1&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;grid__item&quot;&gt;
-        &lt;div class=&quot;block--bg&quot;&gt;1&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;grid__item&quot;&gt;
-        &lt;div class=&quot;block--bg&quot;&gt;1&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;grid__item&quot;&gt;
-        &lt;div class=&quot;block--bg&quot;&gt;1&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                        </div>
                     </div>
-                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-1">copy</button>
                 </div>
 
-                <div id="custom" class="spacer--lrg">
+                <div class="spacer--lrg">
                     <h2>Grid met ongelijke kolommen</h2>
-                    <div class="panel spacer--lrg">
-                        <div class="panel__body">
-                            <div class="grid spacer">
-                                <div class="grid__12 grid--bp-med__1">
-                                    <div class="block--bg">1</div>
-                                </div>
-                                <div class="grid__12 grid--bp-med__11">
-                                    <div class="block--bg">11</div>
-                                </div>
-                            </div>
-                            <div class="grid spacer">
-                                <div class="grid__12 grid--bp-med__2">
-                                    <div class="block--bg">2</div>
-                                </div>
-                                <div class="grid__12 grid--bp-med__10">
-                                    <div class="block--bg">10</div>
-                                </div>
-                            </div>
-                            <div class="grid spacer">
-                                <div class="grid__12 grid--bp-med__3">
-                                    <div class="block--bg">3</div>
-                                </div>
-                                <div class="grid__12 grid--bp-med__9">
-                                    <div class="block--bg">9</div>
-                                </div>
-                            </div>
-                            <div class="grid spacer">
-                                <div class="grid__12 grid--bp-med__4">
-                                    <div class="block--bg">4</div>
-                                </div>
-                                <div class="grid__12 grid--bp-med__8">
-                                    <div class="block--bg">8</div>
-                                </div>
-                            </div>
-                            <div class="grid spacer">
-                                <div class="grid__12 grid--bp-med__5">
-                                    <div class="block--bg">5</div>
-                                </div>
-                                <div class="grid__12 grid--bp-med__7">
-                                    <div class="block--bg">7</div>
-                                </div>
-                            </div>
-                            <div class="grid spacer">
-                                <div class="grid__12 grid--bp-med__6">
-                                    <div class="block--bg">6</div>
-                                </div>
-                                <div class="grid__12 grid--bp-med__6">
-                                    <div class="block--bg">6</div>
-                                </div>
-                            </div>
-                            <div class="grid spacer">
-                                <div class="grid__12 grid--bp-med__12">
-                                    <div class="block--bg">12</div>
-                                </div>
-                            </div>
+                    <div class="grid spacer">
+                        <div class="grid__12 grid--bp-med__2">
+                            <div class="block--bg">2</div>
                         </div>
-                        <div class="panel__code">
-                            <pre><code id="copy-2" class="html">&#x3C;div class=&#x22;container&#x22;&#x3E;
-    &#x3C;div class=&#x22;grid spacer&#x22;&#x3E;
-        &#x3C;div class=&#x22;grid__12 grid--bp-med__1&#x22;&#x3E;
-            &#x3C;div class=&#x22;block--bg&#x22;&#x3E;1&#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;grid__12 grid--bp-med__11&#x22;&#x3E;
-            &#x3C;div class=&#x22;block--bg&#x22;&#x3E;11&#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;grid spacer&#x22;&#x3E;
-        &#x3C;div class=&#x22;grid__12 grid--bp-med__2&#x22;&#x3E;
-            &#x3C;div class=&#x22;block--bg&#x22;&#x3E;2&#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;grid__12 grid--bp-med__10&#x22;&#x3E;
-            &#x3C;div class=&#x22;block--bg&#x22;&#x3E;10&#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;grid spacer&#x22;&#x3E;
-        &#x3C;div class=&#x22;grid__12 grid--bp-med__3&#x22;&#x3E;
-            &#x3C;div class=&#x22;block--bg&#x22;&#x3E;3&#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;grid__12 grid--bp-med__9&#x22;&#x3E;
-            &#x3C;div class=&#x22;block--bg&#x22;&#x3E;9&#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;grid spacer&#x22;&#x3E;
-        &#x3C;div class=&#x22;grid__12 grid--bp-med__4&#x22;&#x3E;
-            &#x3C;div class=&#x22;block--bg&#x22;&#x3E;4&#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;grid__12 grid--bp-med__8&#x22;&#x3E;
-            &#x3C;div class=&#x22;block--bg&#x22;&#x3E;8&#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;grid spacer&#x22;&#x3E;
-        &#x3C;div class=&#x22;grid__12 grid--bp-med__5&#x22;&#x3E;
-            &#x3C;div class=&#x22;block--bg&#x22;&#x3E;5&#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;grid__12 grid--bp-med__7&#x22;&#x3E;
-            &#x3C;div class=&#x22;block--bg&#x22;&#x3E;7&#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;grid spacer&#x22;&#x3E;
-        &#x3C;div class=&#x22;grid__12 grid--bp-med__6&#x22;&#x3E;
-            &#x3C;div class=&#x22;block--bg&#x22;&#x3E;6&#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;grid__12 grid--bp-med__6&#x22;&#x3E;
-            &#x3C;div class=&#x22;block--bg&#x22;&#x3E;6&#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;grid spacer&#x22;&#x3E;
-        &#x3C;div class=&#x22;grid__12 grid--bp-med__12&#x22;&#x3E;
-            &#x3C;div class=&#x22;block--bg&#x22;&#x3E;12&#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;</code></pre>
+                        <div class="grid__12 grid--bp-med__10">
+                            <div class="block--bg">10</div>
                         </div>
                     </div>
-                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-2">copy</button>
+                    <div class="grid spacer">
+                        <div class="grid__12 grid--bp-med__4">
+                            <div class="block--bg">4</div>
+                        </div>
+                        <div class="grid__12 grid--bp-med__8">
+                            <div class="block--bg">8</div>
+                        </div>
+                    </div>
+                    <div class="grid spacer">
+                        <div class="grid__12 grid--bp-med__6">
+                            <div class="block--bg">6</div>
+                        </div>
+                        <div class="grid__12 grid--bp-med__6">
+                            <div class="block--bg">6</div>
+                        </div>
+                    </div>
+                    <div class="grid spacer">
+                        <div class="grid__12 grid--bp-med__12">
+                            <div class="block--bg">12</div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- <div id="gridflex" class="spacer--lrg">
-                    <h2>Grid met flexbox</h2>
-                    <div class="panel spacer--lrg">
-                        <div class="panel__body">
-                            <div class="grid grid--flex grid--bp-med-2-col spacer">
-                                <div class="block--bg grid__item">
-                                    1
-                                </div>
-                                <div class="block--bg grid__item">
-                                    1<br>2<br>3<br>4
-                                </div>
+                <div class="spacer--lrg">
+                    <h2 id="offset">Grid offset</h2>
+                    <p>
+                        Some examples of a grid offset and what you can do with it. <br>
+                        <ul class="list--unordered">
+                            <li>It uses breakpoints</li>
+                            <li>For equal and custom but diffrent syntax</li>
+                        </ul>
+                    </p>
+                    <h3>Grid equal offset</h3>
+                    <div class="grid">
+                        <div class="grid__item">
+                            <div class="block--bg">
+                                Offset
                             </div>
                         </div>
-                        <div class="panel__code">
-                            <pre><code id="copy-2" class="html">/</code></pre>
+                    </div>
+{% highlight html %}
+<div class="grid">
+    <div class="grid__12 grid--bp-med__8 grid--bp-med__offset-2">
+        ...
+    </div>
+</div>{% endhighlight %}
+                    <h3>Grid custom offset</h3>
+                    <div class="grid spacer">
+                        <div class="grid__12 grid--bp-med__8 grid--bp-med__offset-2">
+                            <div class="block--bg">Offset</div>
                         </div>
                     </div>
-                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-3">copy</button>
-                </div> -->
+{% highlight html %}
+<div class="grid">
+    <div class="grid__12 grid--bp-med__8 grid--bp-med__offset-2">
+        ...
+    </div>
+</div>{% endhighlight %}
+                </div>
             </div>
         </div>
     </div>

@@ -3,8 +3,52 @@
         {% for my_page in site.pages %}
             {% if my_page.title %}
                 <!--<li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>-->
-                <li><a {% if my_page.url == page.url %}class="active"{% endif %} href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+                <!-- <li><a {% if my_page.url == page.url %}class="active"{% endif %} href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li> -->
             {% endif %}
         {% endfor %}
+        <li><a href="{{ site.baseurl }}/grid">Grid</a></li>
+        <nav class="nav nav--docu__sub">
+            <ul>
+                <li><a href="{{ site.baseurl }}/grid#intro">Introductie</a></li>
+                <li><a href="{{ site.baseurl }}/grid#equal">Grid equal</a></li>
+                <li><a href="{{ site.baseurl }}/grid#not-equal">Grid custom</a></li>
+                <li><a href="{{ site.baseurl }}/grid#offset">Grid offset</a></li>
+            </ul>
+        </nav>
+        <li><a href="{{ site.baseurl }}/core">Core</a></li>
+        <nav class="nav--docu__sub">
+            <ul>
+                <li><a href="{{ site.baseurl }}/core#typography">Typography</a></li>
+                <li><a href="{{ site.baseurl }}/core#buttons">Buttons</a></li>
+                <li><a href="{{ site.baseurl }}/core#tables">Tables</a></li>
+                <li><a href="{{ site.baseurl }}/core#forms">Forms</a></li>
+                <li><a href="{{ site.baseurl }}/core#images">Images</a></li>
+                <li><a href="{{ site.baseurl }}/core#icons">Icons</a></li>
+            </ul>
+        </nav>
+        <li><a href="{{ site.baseurl }}/components">Components</a></li>
+        <nav class="nav nav--docu__sub">
+            <ul>
+                <li><a href="{{ site.baseurl }}/components#banner">Banner</a></li>
+                <li><a href="{{ site.baseurl }}/components#blocks">Blocks</a></li>
+                <li><a href="{{ site.baseurl }}/components#breadcrumbs">Breadcrumbs</a></li>
+                <li><a href="{{ site.baseurl }}/components#btn-group">Button group</a></li>
+                <li><a href="{{ site.baseurl }}/components#collapse">Collapse</a></li>
+                <!--<li><a href="{{ site.baseurl }}/components#download">Download</a></li>-->
+                <li><a href="{{ site.baseurl }}/components#dropdown">Dropdown</a></li>
+                <li><a href="{{ site.baseurl }}/components#embed">Responsive Embed</a></li>
+                <li><a href="{{ site.baseurl }}/components#excerpt">Card</a></li>
+                <li><a href="{{ site.baseurl }}/components#gallery">Colorbox</a></li>
+                <li><a href="{{ site.baseurl }}/components#inline">Inline</a></li>
+                <li><a href="{{ site.baseurl }}/components#label">Label</a></li>
+                <!--<li><a href="{{ site.baseurl }}/components#logo">Logo</a></li>-->
+                <!--<li><a href="{{ site.baseurl }}/components#map">Map</a></li>-->
+                <li><a href="{{ site.baseurl }}/components#meta">Meta</a></li>
+                <li><a href="{{ site.baseurl }}/components#notice">Notice</a></li>
+                <li><a href="{{ site.baseurl }}/components#pagination">Pagination</a></li>
+                <li><a href="{{ site.baseurl }}/components#share">Share</a></li>
+                <li><a href="{{ site.baseurl }}/components#spacer">Spacer</a></li>
+            </ul>
+        </nav>
     </ul>
 </nav>

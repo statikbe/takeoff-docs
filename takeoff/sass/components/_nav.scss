@@ -60,7 +60,6 @@
 
   &--docu {
     @extend %ext-default-nav;
-    height: 100%;
     li {
       margin: 0 $rh-sml;
     }
@@ -73,6 +72,11 @@
       &:focus,
       &.active {
         color: $color-primary;
+      }
+    }
+    &__sub {
+      a {
+        @include link-variant($gray-25, $color-primary);
       }
     }
   } // end .--docu

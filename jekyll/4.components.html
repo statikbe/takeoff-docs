@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Components
 permalink: /components/
 ---
@@ -7,36 +7,7 @@ permalink: /components/
     <div class="container">
         <div class="grid">
             <div class="grid__12 grid--bp-med__2">
-                <nav class="nav nav--list">
-                    <ul>
-                        <li><a href="#banner">Banner</a></li>
-                        <li><a href="#blocks">Blokken</a></li>
-                        <li><a href="#breadcrumbs">Broodkruimel</a></li>
-                        <li><a href="#btn-group">Knoppen groeperen</a></li>
-                        <li><a href="#collapse">Collapse</a></li>
-                        <!--<li><a href="#date">Date</a></li>-->
-                        <!--<li><a href="#download">Download</a></li>-->
-                        <li><a href="#dropdown">Dropdown</a></li>
-                        <li><a href="#embed">Responsive Embed</a></li>
-                        <li><a href="#excerpt">Excerpt</a></li>
-                        <li><a href="#gallery">Colorbox</a></li>
-                        <li><a href="#inline">Inline</a></li>
-                        <li><a href="#label">Label</a></li>
-                        <!--<li><a href="#legend">Legend</a></li>-->
-                        <!--<li><a href="#logo">Logo</a></li>-->
-                        <!--<li><a href="#map">Map</a></li>-->
-                        <!--<li><a href="#media">Media</a></li>-->
-                        <li><a href="#meta">Meta</a></li>
-                        <li><a href="#notice">Notice</a></li>
-                        <li><a href="#pagination">Paginatie</a></li>
-                        <li><a href="#panel">Panel</a></li>
-                        <li><a href="#progress">Progress</a></li>
-                        <li><a href="#scrolltop">Scroll to top</a></li>
-                        <li><a href="#share">Share</a></li>
-                        <li><a href="#spacer">Spacer</a></li>
-                        <li><a href="#tabs">Tabs</a></li>
-                    </ul>
-                </nav>
+                {% include navigation.html %}
             </div>
 
             <div class="grid__12 grid--bp-med__10">
@@ -1167,116 +1138,6 @@ permalink: /components/
                         </div>
                     </div>
                     <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-17">copy</button>
-                </div>
-
-                <div id="panel" class="spacer--lrg">
-                    <h2>Panel</h2>
-                    <div class="panel spacer--lrg">
-                        <div class="panel__body">
-                            <p class="text--label">Panel</p>
-                            <div class="panel spacer">
-                                <div class="panel__header">
-                                    Header
-                                </div>
-                                <div class="panel__body">
-                                    Body
-                                </div>
-                                <div class="panel__footer">
-                                    Footer
-                                </div>
-                            </div>
-                            <p class="text--label spacer--lrg">Panel background</p>
-                            <div class="panel--bg">
-                                <div class="panel__header">
-                                    Header
-                                </div>
-                                <div class="panel__body">
-                                    Body
-                                </div>
-                                <div class="panel__footer">
-                                    Footer
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel__code">
-                            <pre><code id="copy-18" class="html">&#x3C;div class=&#x22;panel&#x22;&#x3E;
-    &#x3C;div class=&#x22;panel__header&#x22;&#x3E;
-        ...
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;panel__body&#x22;&#x3E;
-        ...
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;panel__footer&#x22;&#x3E;
-        ...
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-&#x3C;!-- Panel Background --&#x3E;
-&#x3C;div class=&#x22;panel--bg&#x22;&#x3E;
-    &#x3C;div class=&#x22;panel__header&#x22;&#x3E;
-        ...
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;panel__body&#x22;&#x3E;
-        ...
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;panel__footer&#x22;&#x3E;
-        ...
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;</code></pre>
-                        </div>
-                    </div>
-                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-18">copy</button>
-                </div>
-
-                <div id="progress" class="spacer--lrg">
-                    <h2>Progress</h2>
-                    <div class="panel spacer--lrg">
-                        <div class="panel__body">
-                            <div class="progress progress--values-top">
-                                <div class="progress__bar progress__bar--success" style="width: 22%">
-                                    <span class="progress__text">22%</span>
-                                </div>
-                                <div class="progress__bar progress__bar--info" style="width: 34%">
-                                    <span class="progress__text">34%</span>
-                                </div>
-                                <div class="progress__bar progress__bar--warning" style="width: 16%">
-                                    <span class="progress__text">16%</span>
-                                </div>
-                                <div class="progress__bar progress__bar--danger" style="width: 28%">
-                                    <span class="progress__text">28%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel__code">
-                            <pre><code id="copy-19" class="html">&#x3C;div class=&#x22;progress progress--values-top&#x22;&#x3E;
-    &#x3C;div class=&#x22;progress__bar progress__bar--success&#x22; style=&#x22;width: 22%&#x22;&#x3E;
-        &#x3C;span class=&#x22;progress__text&#x22;&#x3E;22%&#x3C;/span&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;progress__bar progress__bar--info&#x22; style=&#x22;width: 34%&#x22;&#x3E;
-        &#x3C;span class=&#x22;progress__text&#x22;&#x3E;34%&#x3C;/span&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;progress__bar progress__bar--warning&#x22; style=&#x22;width: 16%&#x22;&#x3E;
-        &#x3C;span class=&#x22;progress__text&#x22;&#x3E;16%&#x3C;/span&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;progress__bar progress__bar--danger&#x22; style=&#x22;width: 28%&#x22;&#x3E;
-        &#x3C;span class=&#x22;progress__text&#x22;&#x3E;28%&#x3C;/span&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;</code></pre>
-                        </div>
-                    </div>
-                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-19">copy</button>
-                </div>
-
-                <div id="scrolltop" class="spacer--lrg">
-                    <h2>Scroll to top</h2>
-                    <div class="panel spacer--lrg">
-                        <div class="panel__body">
-                            <p class="text--label">Kijk rechtsonder in de hoek van je browser.</p>
-                        </div>
-                        <div class="panel__code">
-                            <pre><code id="copy-scrolltop" class="html">&#x3C;a href=&#x22;#&#x22; class=&#x22;scroll-to-top&#x22;&#x3E;&#x3C;i class=&#x22;material-icons&#x22;&#x3E;keyboard_arrow_up&#x3C;/i&#x3E;&#x3C;/a&#x3E;</code></pre>
-                        </div>
-                    </div>
-                    <button class="btn btn--small spacer--xsm" data-clipboard-target="#copy-scrolltop">copy</button>
                 </div>
 
                 <div id="share" class="spacer--lrg">
