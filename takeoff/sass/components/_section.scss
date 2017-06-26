@@ -20,7 +20,9 @@
 
 .section {
   padding: $rh-med 0;
-
+  &--xlr {
+    padding: ($rh-xlr * 2) 0;
+  }
   &--bg {
     @extend %ext-section-dark;
     background: $color-primary;
@@ -33,7 +35,7 @@
     background: $gray-100;
   }
   &--border {
-    border-top: 1px solid $gray-25;
+    border-top: 1px solid darken($gray-0, 4%);
   }
 
   &--default {
